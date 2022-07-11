@@ -17,6 +17,14 @@ header {
     padding-left: 20px
 }
 
+
+/* nav */ 
+
+#main-nav{
+  padding-right: 120px
+}
+
+
 /* carosel css */
 
 Carousel base class
@@ -89,3 +97,14 @@ Carousel base class
       margin-top: 7rem;
     }
   }
+@media (max-width: 992px){
+  .list-inline-item {
+    position: relative;
+    left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;}
+}
+
+ .navbar-expand-lg{
+  padding: 10px;
+ }
