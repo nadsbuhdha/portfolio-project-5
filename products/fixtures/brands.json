@@ -1,0 +1,44 @@
+[{
+    "pk": 1,
+    "model": "products.brand",
+    "fields": {
+        "name": "adidas",
+        "friendly_name": "Adidas"
+    }
+}, {
+    "pk": 2,
+    "model": "products.brand",
+    "fields": {
+        "name": "nike",
+        "friendly_name": "Nike"
+    }
+}, {
+    "pk": 3,
+    "model": "products.brand",
+    "fields": {
+        "name": "converse",
+        "friendly_name": "Converse"
+    }
+}, {
+    "pk": 4,
+    "model": "products.brand",
+    "fields": {
+        "name": "new_balance",
+        "friendly_name": "New Balance"
+    }
+}, {
+    "pk": 5,
+    "model": "products.brand",
+    "fields": {
+        "name": "vans",
+        "friendly_name": "Vans"
+    }
+}, {
+    "pk": 6,
+    "model": "products.brand",
+    "fields": {
+        "name": "off_white",
+        "friendly_name": "Off Whites",
+    }
+    
+}]
