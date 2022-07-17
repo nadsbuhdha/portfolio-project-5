@@ -38,7 +38,25 @@
     "model": "products.brand",
     "fields": {
         "name": "off_white",
-        "friendly_name": "Off Whites",
+        "friendly_name": "Off Whites"
+    }
+    
+},
+{
+    "pk": 7,
+    "model": "products.brand",
+    "fields": {
+        "name": "reebok",
+        "friendly_name": "Reebok"
+    }
+    
+},
+{
+    "pk": 8,
+    "model": "products.brand",
+    "fields": {
+        "name": "asics",
+        "friendly_name": "Asics"
     }
     
 }]
