@@ -1,0 +1,18 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"GX7576",
+          "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+          "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+          "price":300.00,
+          "category":1,
+          "brand":2,
+          "gender":"u",
+          "rating":4.8,
+          "image_url":"media/airjordanretrohigh.jpeg",
+          "image":"airjordanretrohigh.jpeg"
+       }
+    }
+]

@@ -22,12 +22,24 @@ class Brand(models.Model):
     
     friendly_name = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name
+
+
+GENDER = (
+    ('u', 'Unisex'),
+    ('w', "Women's"),
+    ('m', "Men's"),
+)
+
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
+    brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)
+    gender = models.CharField(choices=GENDER, max_length=10,default='u')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
