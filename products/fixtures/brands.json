@@ -59,4 +59,14 @@
         "friendly_name": "Asics"
     }
     
+},
+{
+    "pk": 9,
+    "model": "products.brand",
+    "fields": {
+        "name": "extras",
+        "friendly_name": "extras"
+    }
+
+
 }]

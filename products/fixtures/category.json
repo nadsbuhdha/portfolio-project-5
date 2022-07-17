@@ -46,5 +46,13 @@
             "name": "headwear",
             "friendly_name": "Headwear"
         }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "essentails",
+            "friendly_name": "Essentails"
+        }
     }
 ]

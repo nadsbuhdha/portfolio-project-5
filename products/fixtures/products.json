@@ -14,5 +14,357 @@
           "image_url":"media/airjordanretrohigh.jpeg",
           "image":"airjordanretrohigh.jpeg"
        }
-    }
+    },
+    {
+        "pk":2,
+        "model":"products.product",
+        "fields":{
+           "sku":"GZ7945",
+           "name":"AIR JORDAN 4 RETRO 'MILITARY BLACK'",
+           "description":"Featuring the same color blocking and materials used on the OG 'Military Blue' colorway from 1989 is the Air Jordan 4 Retro 'Military Black.' The upper is made with smooth white leather with a forefoot overlay in grey suede. Black accents are on the TPU eyelets, molded heel tab, and the Jumpman logo on the woven tongue tag. ",
+           "price":264.00,
+           "category":1,
+           "brand":2,
+           "gender":"m",
+           "rating":4.7,
+           "image_url":"media/airjordanfour.jpeg",
+           "image":"airjordanfour.jpeg"
+        }
+     },
+     {
+        "pk":3,
+        "model":"products.product",
+        "fields":{
+           "sku":"GY5028",
+           "name":"AIR JORDAN 5 RETRO 'GREEN BEAN' 2022",
+           "description":"Bringing back a two-tone colorway first released in 2006 is the 2022 edition of the Air Jordan 5 'Green Bean.' Similar to the original mid-top, a light grey nubuck upper is entirely coated in a reflective finish.",
+           "price":164.00,
+           "category":1,
+           "brand":2,
+           "gender":"m",
+           "rating":3.8,
+           "image_url":"media/jordansfive.jpeg",
+           "image":"jordansfive.jpeg"
+        }
+     },
+     {
+        "pk":4,
+        "model":"products.product",
+        "fields":{
+           "sku":"GZ7925",
+           "name":"DUNK LOW 'BLACK WHITE'",
+           "description":"The Dunk Low 'Black White' also known as 'Panda' brings a classic two-tone look to its classic basketball construction. The shoe's low-top build emerges in leather, with a white base contrasted by black overlays, with further black on the Swoosh branding.",
+           "price":167.00,
+           "category":1,
+           "brand":2,
+           "gender":"w",
+           "rating":4.8,
+           "image_url":"media/dunklow.jpeg",
+           "image":"dunklow.jpeg"
+        }
+     },
+     {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"EF4400",
+           "name":"AIR MAX 95 OG 'NEON' 2020",
+           "description":"Released in December 2020, the Air Max 95 OG 'Neon' 2020 features the silhouette's OG colorway. The shoe's signature layered construction appears in a greyscale fashion, with Neon Yellow ribbed eyelets accenting the design.",
+           "price":181.00,
+           "category":7,
+           "brand":2,
+           "gender":"w",
+           "rating":3.7,
+           "image_url":"media/airmaxog.jpeg",
+           "image":"airmaxog.jpeg"
+        }
+     },
+     {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "sku":"Q47100",
+           "name":"PHARRELL X NMD HUMAN RACE 'AQUA'",
+           "description":"The Pharrell x NMD Human Race 'Aqua' released as part of a larger collection. The shoe's upper is built with Primeknit, finished in Aqua and supported by warparound laces worked into the TPU overlays. 'Uluntu' is embroidered down the vamp, while black on the collar contrasts the look.",
+           "price":176.00,
+           "category":1,
+           "brand":1,
+           "gender":"u",
+           "rating":3.5,
+           "image_url":"media/adidas_pharrell_aqua.jpeg",
+           "image":"adidas_pharrell_aqua.jpeg"
+        }
+     },
+     {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+           "sku":"H04249",
+           "name":"STAN SMITH 'TRIPLE WHITE'",
+           "description":"The Stan Smith 'Triple White' presents a no-nonsense colorway of the classic tennis shoe, with a leather upper featuring perforated Three-Stripes on the side wall.",
+           "price":50.00,
+           "category":7,
+           "brand":1,
+           "gender":"u",
+           "rating":4.8,
+           "image_url":"media/stansmith.jpeg",
+           "image":"stansmith.jpeg"
+        }
+     },
+     {
+        "pk":8,
+        "model":"products.product",
+        "fields":{
+           "sku":"FV1836",
+           "name":"SUPERSTAR 'WHITE'",
+           "description":"Sporting a clean Triple White look, the Superstar 'White' features a smooth leather upper with tonal Three-Stripes and perforations on the quarter panel. ",
+           "price":25.00,
+           "category":7,
+           "brand":1,
+           "gender":"u",
+           "rating":3.8,
+           "image_url":"media/stansmith.jpeg",
+           "image":"stansmith.jpeg"
+        }
+     },
+     {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+           "sku":"FW2002",
+           "name":"OZWEEGO 'BLACK CARBON'",
+           "description":"The Ozweego 'Black Carbon' brings a blacked-out colorway to its 90s-inspired design. The shoe's upper sports a mesh base overlaid by TPU skin, suede and neoprene, all finished tonally.",
+           "price":46.00,
+           "category":4,
+           "brand":1,
+           "gender":"w",
+           "rating":2.8,
+           "image_url":"media/ozweego.jpeg",
+           "image":"ozweego.jpeg"
+        }
+     },
+     {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"H01996",
+         "name":"FORUM LOW 'WHITE ROYAL BLUE'",
+         "description":"This pair of the classic shoes brings back the '80s attitude, the explosive hardwood energy and the iconic X-strap ankle design, distilled into a low top version meant for the streets.",
+         "price":67.00,
+         "category":4,
+         "brand":2,
+         "gender":"m",
+         "rating":4.2,
+         "image_url":"media/forums.jpeg",
+         "image":"forums.jpeg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"FY7236",
+         "name":"COMME DES GARÇONS X CHUCK TAYLOR ALL STAR HI 'PLAY'",
+         "description":"A collaboration between Commes des Garçons and Chuck Taylor, the Comme des Garçons x Chuck Taylor All Star High 'Play' features a black canvas upper accented by a red peekaboo heart designed by Filip Pagowski on the lateral quarter panel.",
+         "price":88.00,
+         "category":7,
+         "brand":3,
+         "gender":"m",
+         "rating":3.8,
+         "image_url":"media/comme_degasson_hi.jpeg",
+         "image":"comme_degasson_hi.jpeg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"FW5705",
+         "name":"COMME DES GARÇONS X CHUCK TAYLOR ALL STAR HI 'MILK'",
+         "description":"Releasing alongside a similarly styled black colorway, the Comme des Garçons x Chuck Taylor All Star Hi 'Milk' features a Milk canvas upper accented by a red peekaboo heart logo on the lateral side, with the usual branding on the medial side.",
+         "price":88.00,
+         "category":7,
+         "brand":3,
+         "gender":"w",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"FV9650",
+         "name":"KEITH HARING X CHUCK 70 HIGH",
+         "description":"Celebrating the 80s pop artist, the Keith Haring x Chuck 70 High released as part of a larger collection. Built with organic canvas, the shoe's upper appears in white, highlighted by Keith Haring's dancing figures in a black embroidered fashion on the lateral side, continuing down onto the midsole. ",
+         "price":75.00,
+         "category":7,
+         "brand":3,
+         "gender":"u",
+         "rating":4.4,
+         "image_url":"media/keith_haring_chucks.jpeg",
+         "image":"keith_haring_chucks.jpeg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"H04242",
+         "name":"GOLF LE FLEUR X CHUCK 70 HIGH 'FLAME - PASTEL YELLOW'",
+         "description":"Whenever Converse and GOLF le FLEUR* come together, you can count on the result being bold and vibrant — after all, Tyler, the Creator is involved. The latest from the two — a rework of the iconic Chuck Taylor 70 — is no different, either.",
+         "price":144.00,
+         "category":2,
+         "brand":3,
+         "gender":"m",
+         "rating":4.8,
+         "image_url":"media/golf_le_fleur_chuck.jpeg",
+         "image":"golf_le_fleur_chuck.jpeg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"G58892",
+         "name":"NEW BALANCE 550 'WHITE GREEN'",
+         "description":"The 550 'White Green' brings a classic two-tone look to its retro construction. The shoe's upper is built with a white leather base, overlaid by tonal suede at the toe and supported by microperforations for breathability.",
+         "price":172.00,
+         "category":7,
+         "brand":4,
+         "gender":"m",
+         "rating":3.8,
+         "image_url":"media/newbalance_green.jpeg",
+         "image":"newbalance_green.jpeg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"FX9085",
+         "name":"TEDDY SANTIS X 990V2 MADE IN USA 'BLACK'",
+         "description":"Gray suede overlays pair with an off-white mesh base while a cream shade lands on the laces and tongue. This shade continues at the ABZORB midsole which is designed to absorb impact. Rounding out the pair, a premium synthetic suede sockliner combines with a black rubber outsole.",
+         "price":200.00,
+         "category":7,
+         "brand":4,
+         "gender":"w",
+         "rating":3.9,
+         "image_url":"media/tedd_new_balance.jpeg",
+         "image":"tedd_new_balance.jpeg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"FX9086",
+         "name":"OLD SKOOL 'BLACK CHECKERBOARD'",
+         "description":"The Old Skool 'Black Checkerboard' features a canvas upper finished with a black and white checkerboard pattern on the quarter panel and collar. Black suede overlays emerge on the toe, heel and eystay, while a white jazz-stripe cuts through the design. A waffle outsole provides traction underfoot.",
+         "price":40.00,
+         "category":7,
+         "brand":5,
+         "gender":"u",
+         "rating":4.9,
+         "image_url":"media/classic_vans.jpeg",
+         "image":"classic_vans.jpeg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"FV2316",
+         "name":"NOTRE X VAULT OG OLD SKOOL LX 'OFF WHITE'",
+         "description":"Released in collaboration with the Chicago retailer, the Notre x Vault OG Old Skool LX 'Off White' emerges with a subdued look on its elevated construction.",
+         "price":40.00,
+         "category":7,
+         "brand":5,
+         "gender":"w",
+         "rating":3.2,
+         "image_url":"media/vans_grey.jpeg",
+         "image":"vans_grey.jpeg"
+      }
+   },
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"GX7576",
+         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+         "price":300.00,
+         "category":1,
+         "brand":2,
+         "gender":"u",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   },
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"GX7576",
+         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+         "price":300.00,
+         "category":1,
+         "brand":2,
+         "gender":"u",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   },
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"GX7576",
+         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+         "price":300.00,
+         "category":1,
+         "brand":2,
+         "gender":"u",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   },
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"GX7576",
+         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+         "price":300.00,
+         "category":1,
+         "brand":2,
+         "gender":"u",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   },
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"GX7576",
+         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
+         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
+         "price":300.00,
+         "category":1,
+         "brand":2,
+         "gender":"u",
+         "rating":4.8,
+         "image_url":"media/airjordanretrohigh.jpeg",
+         "image":"airjordanretrohigh.jpeg"
+      }
+   }
 ]
