@@ -15,13 +15,52 @@
 
 {% endblock %}
 
-<div class="container">
+
+<div class="container-fluid px-3 products-page">
     <div class="row">
-        <div class="col">
-            {{ products }}
+        <div class="col-12 col-sm-6 p-4 my-auto">
+            <h1 class="font-black-bg">Products </h1>
+        </div>
+    <div class="row">
+        <div class="">
+            <div class="row">
+                {% for product in products %}
+                    <!-- Products -->
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card mx-auto col-md-3 text-white bg-dark mb-3" style="width: 18rem;">
+                            {% if product.image %}
+                                <a href="#">
+                                    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                                </a>
+                            {% else %}
+                                <a href="#">
+                                    <img src="#" class="card-img-top" alt="no image available">
+                                </a>
+                            {% endif %}
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2 class="card-title font-black">{{ product.name }}</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3 class="font-weight-light font-black">{{ product.brand.friendly_name }}</h3>
+                                    </div>
+                                        <div class="col-6 font-black">
+                                            <h3>£{{ product.price }}</h3>
+                                        </div>
+                                    {% if product.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5.0</small>
+                                    {% else %}
+                                        <small class="text-muted">No Rating, be the first to rate below</small>
+                                    {% endif %}
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
 
 
 
