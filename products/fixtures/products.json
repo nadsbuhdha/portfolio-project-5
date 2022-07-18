@@ -276,7 +276,7 @@
       "model":"products.product",
       "fields":{
          "sku":"FV2316",
-         "name":"NOTRE X VAULT OG OLD SKOOL LX 'OFF WHITE'",
+         "name":"NOTRE X VAULT OG OLD SKOOL LX",
          "description":"Released in collaboration with the Chicago retailer, the Notre x Vault OG Old Skool LX 'Off White' emerges with a subdued look on its elevated construction.",
          "price":40.00,
          "category":7,
@@ -288,83 +288,243 @@
       }
    },
    {
-      "pk":1,
+      "pk":20,
       "model":"products.product",
       "fields":{
-         "sku":"GX7576",
-         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
-         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
-         "price":300.00,
-         "category":1,
-         "brand":2,
-         "gender":"u",
-         "rating":4.8,
-         "image_url":"media/airjordanretrohigh.jpeg",
-         "image":"airjordanretrohigh.jpeg"
+         "sku":"FY9659",
+         "name":"OFF-WHITE X WMNS AIR JORDAN 4 SP 'SAIL'",
+         "description":"The OFF-WHITE x Wmns Air Jordan 4 SP 'Sail' released as part of a collaboration between Virgil Abloh's luxury brand and Jordan Brand. The classic basketball silhouette emerges with a deconstructed leather build, finished in off-white and complemented by semi-translucent TPU on the eyelets, wings and heel panel. A tonal zip-tie and 'Air' above the visible cushioning complete the look.",
+         "price":1250.00,
+         "category":8,
+         "brand":6,
+         "gender":"w",
+         "rating":4.9,
+         "image_url":"media/offwhite_jordans.jpeg",
+         "image":"offwhite_jordans.jpeg"
       }
    },
    {
-      "pk":1,
+      "pk":21,
       "model":"products.product",
       "fields":{
-         "sku":"GX7576",
-         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
-         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
-         "price":300.00,
-         "category":1,
-         "brand":2,
-         "gender":"u",
-         "rating":4.8,
-         "image_url":"media/airjordanretrohigh.jpeg",
-         "image":"airjordanretrohigh.jpeg"
+         "sku":"FY7235",
+         "name":"OFF-WHITE X AIR JORDAN 1 RETRO HIGH OG 'UNC'",
+         "description":"Inspired by the alma mater of Michael Jordan, the Off-White x Air Jordan 1 Retro High OG 'UNC' holds a classic structure of two tones, filtered through the distinctive design prism of Virgil Abloh. The method includes taking a white leather foundation with blue overlays of dark powder and adding embellishments that express an expressive, handmade value. ",
+         "price":1600.00,
+         "category":8,
+         "brand":6,
+         "gender":"m",
+         "rating":4.9,
+         "image_url":"media/offwhite_jordans_c.jpeg",
+         "image":"offwhite_jordans_c.jpeg"
       }
    },
    {
-      "pk":1,
+      "pk":22,
       "model":"products.product",
       "fields":{
-         "sku":"GX7576",
-         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
-         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
-         "price":300.00,
-         "category":1,
-         "brand":2,
-         "gender":"u",
+         "sku":"FV9993",
+         "name":"OFF-WHITE X AIR JORDAN 5 SP 'SAIL'",
+         "description":"Jordan Brand teamed up with Virgil Abloh's luxury streetwear label to create the Off-White x Air Jordan 5 Retro 'Fire Red' in October 2020.",
+         "price":700.00,
+         "category":8,
+         "brand":6,
+         "gender":"m",
          "rating":4.8,
-         "image_url":"media/airjordanretrohigh.jpeg",
-         "image":"airjordanretrohigh.jpeg"
+         "image_url":"media/offwhite_jordan_five.jpeg",
+         "image":"offwhite_jordan_five.jpeg"
       }
    },
    {
-      "pk":1,
+      "pk":23,
       "model":"products.product",
       "fields":{
-         "sku":"GX7576",
-         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
-         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
-         "price":300.00,
-         "category":1,
-         "brand":2,
-         "gender":"u",
-         "rating":4.8,
-         "image_url":"media/airjordanretrohigh.jpeg",
-         "image":"airjordanretrohigh.jpeg"
+         "sku":"FW4817",
+         "name":"OFF-WHITE X DUNK LOW 'LOT 09 OF 50'",
+         "description":"This Off-White x Nike Dunk Low is taken from the ‘Dear Summer’ collection, a sprawling follow-up to Virgil Abloh’s first Nike Dunk collaboration from 2019. ",
+         "price":550.00,
+         "category":8,
+         "brand":6,
+         "gender":"w",
+         "rating":3.7,
+         "image_url":"media/offwhite_dunk.jpeg",
+         "image":"offwhite_dunk.jpeg"
       }
    },
    {
-      "pk":1,
+      "pk":24,
       "model":"products.product",
       "fields":{
-         "sku":"GX7576",
-         "name":"AIR JORDAN 1 RETRO HIGH OG 'STAGE HAZE'",
-         "description":"Featuring neutral tones on the foundational sneaker is the Air Jordan 1 Retro High OG 'Stage Haze.' Its' upper combines a white leather base with a grey suede heel overlay and a forefoot overlay in cracked black leather. Matching black accents are featured on the signature Swoosh and a retro Wings logo stamped on the lateral ankle.",
-         "price":300.00,
+         "sku":"FW4818",
+         "name":"CLUB C 85 VINTAGE 'CHALK'",
+         "description":"The Reebok Club C (short for Champion) debuted in 1985 as a renamed version of the Revenge Plus. Like the Reebok Freestyle, the original edition of the Club C was constructed from leather, featured a plush terry towel lining and was a hit among the fans of the aerobic scene which surfaced during the 1980’s.",
+         "price":40.00,
+         "category":7,
+         "brand":7,
+         "gender":"u",
+         "rating":3.5,
+         "image_url":"media/reebok_classics.jpeg",
+         "image":"reebok_classics.jpeg"
+      }
+   },
+   {
+      "pk":25,
+      "model":"products.product",
+      "fields":{
+         "sku":"FW4818",
+         "name":"CLUB C REVENGE VINTAGE 'CHALK COLLEGIATE ROYAL'",
+         "description":"Released in June 2021, the Club C Revenge Vintage 'Chalk Collegiate Royal' features a look drawn from 80s tennis shoes. Built with leather, the shoe's upper appears in white, complemented by Collegiate Royal on the Vector Branding and heel patch.",
+         "price":40.00,
+         "category":7,
+         "brand":7,
+         "gender":"u",
+         "rating":3.7,
+         "image_url":"media/reebok_chalk.jpeg",
+         "image":"reebok_chalk.jpeg"
+      }
+   },
+   {
+      "pk":26,
+      "model":"products.product",
+      "fields":{
+         "sku":"FW4818",
+         "name":"CLUB C 85 VINTAGE 'CHALK'",
+         "description":"The Reebok Club C (short for Champion) debuted in 1985 as a renamed version of the Revenge Plus. Like the Reebok Freestyle, the original edition of the Club C was constructed from leather, featured a plush terry towel lining and was a hit among the fans of the aerobic scene which surfaced during the 1980’s.",
+         "price":40.00,
+         "category":7,
+         "brand":7,
+         "gender":"u",
+         "rating":3.5,
+         "image_url":"media/reebok_classics.jpeg",
+         "image":"reebok_classics.jpeg"
+      }
+   },
+   {
+      "pk":27,
+      "model":"products.product",
+      "fields":{
+         "sku":"GZ8514",
+         "name":"KITH X GEL LYTE 5 'SALMON TOE'",
+         "description":"To help celebrate the New York retailer's 10th anniversary is the Kith x ASICS Gel Lyte 5 'Salmon Toe.' It was first made available to participants of a Zoom panel that Ronnie Fieg hosted in November 2021. It features a navy and pink color scheme with a pigskin suede upper with a perforated toe box and shite synthetic leather side stripes.",
+         "price":90.00,
+         "category":2,
+         "brand":8,
+         "gender":"w",
+         "rating":3.3,
+         "image_url":"media/asics_salmontoe.jpeg",
+         "image":"asics_salmontoe.jpeg"
+      }
+   },
+   {
+      "pk":28,
+      "model":"products.product",
+      "fields":{
+         "sku":"FX3764",
+         "name":"ATMOS X SNEAKER FREAKER X GEL LYTE 3 'ALLEY CATS'",
+         "description":"The ASICS X SNEAKER FREAKER X ATMOS GEL LYTE III ALLEY CATS connects the dots between San Fran and Harajuku’s winding streets across this three-way collab. Skulking alley cats are the focus, mirrored in wild atmos fashion with shorthair suede, bristly cowhide and satin construction.",
+         "price":120.00,
          "category":1,
+         "brand":8,
+         "gender":"u",
+         "rating":3.5,
+         "image_url":"media/reebok_classics.jpeg",
+         "image":"reebok_classics.jpeg"
+      }
+   },
+   {
+      "pk":29,
+      "model":"products.product",
+      "fields":{
+         "sku":"CM1457",
+         "name":"GREEN BUCKET HAT",
+         "description":"The Nike Sportswear Bucket Hat is the perfect accompaniment for your warm-weather adventures. This one's green-hued to liven up your fit, and made with cotton twill materials for comfy, breathable wearing. Nike branding at the front supplies the sign-off.",
+         "price":10.00,
+         "category":6,
          "brand":2,
          "gender":"u",
-         "rating":4.8,
-         "image_url":"media/airjordanretrohigh.jpeg",
-         "image":"airjordanretrohigh.jpeg"
+         "rating":3.5,
+         "image_url":"media/bucket_hat.webp",
+         "image":"bucket_hat.webp"
+      }
+   },
+   {
+      "pk":30,
+      "model":"products.product",
+      "fields":{
+         "sku":"H68081",
+         "name":"ADIDAS BUCKET HAT",
+         "description":"Adidas Originals - Contempo Bell Bucket Hat.",
+         "price":10.00,
+         "category":6,
+         "brand":1,
+         "gender":"u",
+         "rating":3.5,
+         "image_url":"media/adidas_hat.webp",
+         "image":"adidas_hat.webp"
+      }
+   },
+   {
+      "pk":31,
+      "model":"products.product",
+      "fields":{
+         "sku":"EE5404",
+         "name":"ADIDAS OVER THE SHOULDER BAG",
+         "description":"adidas Originals Adicolour Archive Festival Bag",
+         "price":30.00,
+         "category":5,
+         "brand":1,
+         "gender":"u",
+         "rating":4.1,
+         "image_url":"media/adidas_bag.webp",
+         "image":"adidas_bag.webp"
+      }
+   },
+   {
+      "pk":32,
+      "model":"products.product",
+      "fields":{
+         "sku":"H02176",
+         "name":"NIKE HERITAGE WAISTPACK",
+         "description":"Easy storage here from Nike with the Heritage Waistpack. This one has an adjustable strap and two compartments to keep your valuables organised, and is printed with the Nike Futura logo to sign off.",
+         "price":18.00,
+         "category":7,
+         "brand":2,
+         "gender":"u",
+         "rating":3.5,
+         "image_url":"media/nike_pouch.webp",
+         "image":"nike_pouch.webp"
+      }
+   },
+   {
+      "pk":33,
+      "model":"products.product",
+      "fields":{
+         "sku":"FY9660",
+         "name":"Nike TIEMPO LEGEND 9 ELITE FG",
+         "description":"One of our lightest Tiempos to date, the Nike Tiempo Legend 9 Elite FG lets you go on the offensive with a low-profile design that's reinvented for attackers. The upper has raised textures backed by soft foam pods for precise dribbling, passing and shooting, while studs on the bottom provide traction for quick cuts and sudden stops.",
+         "price":204.00,
+         "category":3,
+         "brand":2,
+         "gender":"m",
+         "rating":3.5,
+         "image_url":"media/football_boots_nike.webp",
+         "image":"football_boots_nike.webp"
+      }
+   },
+   {
+      "pk":34,
+      "model":"products.product",
+      "fields":{
+         "sku":"FW4818",
+         "name":"X SPEEDFLOW.1 SOFT GROUND BOOTS",
+         "description":"From brain to boot to ball. And back again. When sharpness of mind meets quickness of body, you become the fastest version of yourself. Find your flow and leave the rest behind. Whatever 'speed' means to you, these adidas X football boots keep you out in front. ",
+         "price":117.00,
+         "category":3,
+         "brand":2,
+         "gender":"m",
+         "rating":4.5,
+         "image_url":"media/adidas_soccer.webp",
+         "image":"media/adidas_soccer.webp"
       }
    }
 ]

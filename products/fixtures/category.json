@@ -35,8 +35,8 @@
         "pk": 5,
         "model": "products.category",
         "fields": {
-            "name": "jewellery",
-            "friendly_name": "Jewellery"
+            "name": "bags",
+            "friendly_name": "bags"
         }
     },
     {
@@ -53,6 +53,14 @@
         "fields": {
             "name": "essentails",
             "friendly_name": "Essentails"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "exclusives",
+            "friendly_name": "Exclusives"
         }
     }
 ]
