@@ -27,7 +27,7 @@
                 {% for product in products %}
                     <!-- Products -->
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                        <div class="card mx-auto col-md-3 text-white bg-dark mb-3" style="width: 18rem;">
+                        <div class="card mx-auto col-md-3 text-white bg-dark mb-3" style="width: 16rem;">
                             {% if product.image %}
                                 <a href="#">
                                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
@@ -40,19 +40,20 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h2 class="card-title font-black">{{ product.name }}</h2>
+                                        <h4 class="card-title font-black">{{ product.name }}</h4>
                                     </div>
                                     <div class="col-12">
-                                        <h3 class="font-weight-light font-black">{{ product.brand.friendly_name }}</h3>
+                                        <h4 class=" font-black">{{ product.brand.friendly_name }}</h4>
                                     </div>
-                                        <div class="col-6 font-black">
-                                            <h3>£{{ product.price }}</h3>
+                                        <div class="col-12 font-black">
+                                            <h5>£{{ product.price }}</h5>
                                         </div>
-                                    {% if product.rating %}
-                                        <small class="text-muted"><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5.0</small>
-                                    {% else %}
-                                        <small class="text-muted">No Rating, be the first to rate below</small>
-                                    {% endif %}
+                                        <small ><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5.0</small>
+                                        <div>
+                                            <button type="button" class="btn btn-success mt-3">
+                                                buy now
+                                            </button>
+                                        </div>
                                   </div>
                             </div>
                         </div>
