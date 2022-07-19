@@ -5,10 +5,12 @@
                 Mens
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Brand</a>
-                <a href="" class="dropdown-item ">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Mens</a>
+                <a href="{% url 'products' %}?gender=m,u&category=best_sellers" class="dropdown-item">Best Sellers</a>
+                <a href="{% url 'products' %}?gender=m,u&category=exclusives" class="dropdown-item ">Exclusives</a>
+                <a href="{% url 'products' %}?gender=m,u&category=new_arrivals" class="dropdown-item ">New Arrivals</a>
+                <a href="{% url 'products' %}?gender=m,u&category=sports_shoes" class="dropdown-item ">Sports Shoes</a>
+                <a href="{% url 'products' %}?gender=m,u&category=essentails" class="dropdown-item">Essentials</a>
+                <a href="{% url 'products' %}?gender=m,u" class="dropdown-item">All Mens</a>
             </div>
         </li>
 
@@ -17,10 +19,12 @@
                 Womens
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">By Brand</a>
-                <a href="" class="dropdown-item ">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item">All Womens</a>
+                <a href="{% url 'products' %}?gender=w,u&category=best_sellers" class="dropdown-item">Best Sellers</a>
+                <a href="{% url 'products' %}?gender=w,u&category=exclusives" class="dropdown-item ">Exclusives</a>
+                <a href="{% url 'products' %}?gender=w,u&category=new_arrivals" class="dropdown-item ">New Arrivals</a>
+                <a href="{% url 'products' %}?gender=w,u&category=sports_shoes" class="dropdown-item ">Sports Shoes</a>
+                <a href="{% url 'products' %}?gender=w,u&category=essentails" class="dropdown-item">Essentials</a>
+                <a href="{% url 'products' %}?gender=w,u" class="dropdown-item">All Mens</a>
             </div>
         </li>
 
@@ -29,9 +33,9 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Hats</a>
-                <a href="" class="dropdown-item">Jewelry</a>
-                <a href="" class="dropdown-item">All accessories</a>
+                <a href="{% url 'products' %}?category=headwear" class="dropdown-item">Hats</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=bags,headwear" class="dropdown-item">All accessories</a>
             </div>
         </li>
 
@@ -40,10 +44,7 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
             </div>
         </li>
     </ul>
