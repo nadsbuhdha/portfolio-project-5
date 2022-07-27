@@ -65,6 +65,10 @@ header {
   padding-left: 25px;
 }
 
+.update-link, .remove-item {
+  cursor: pointer;
+}
+
 
 /*  media queries */
 
