@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
-from django.views.decorators import require_POST
+from django.views.decorators.http import require_POST
 from django.conf import settings
 from bag.contexts import bag_contents
 from products.models import Product
