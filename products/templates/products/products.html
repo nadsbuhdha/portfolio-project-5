@@ -65,9 +65,17 @@
                                         </div>
                                         <small ><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5.0</small>
                                         <div>
-                                            <button type="button" class="btn btn-success mt-3">
+                                            <a href="{% url 'product_detail' product.id %}"><button type="button" class="btn btn-success mt-3">
                                                 buy now
-                                            </button>
+                                            </button></a>
+                                        </div>
+                                        <div>
+                                            {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </small>
+                                            {% endif %}
                                         </div>
                                   </div>
                             </div>
