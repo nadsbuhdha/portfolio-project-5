@@ -79,6 +79,14 @@
         </div>
     </div>
 
+<div>
+    {% for item in favourites_items %}
+    <p>  {{ item.name }}</p>
+    <img class="wishlist-img img-fluid" src="{{ item.image.url }}" alt="{{ item.name }}">
+    {% endfor  %}
+
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
