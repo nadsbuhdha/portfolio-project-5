@@ -65,11 +65,15 @@
                                         </div>
                                         <small ><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5.0</small>
                                         <div class="col">
+                                        {% if request.user.is_authenticated %}
                                             {%  if product in favourites %}
                                             <a href="{% url 'remove_from_favourites' product.id %}"><button type="button" class="btn btn-danger mt-3"><i class="fa-solid fa-heart-circle-xmark" title="Unfavourite"></i></button></a>
                                             {% else %}
                                             <a href="{% url 'add_to_favourites' product.id %}"><small><button type="button" class="btn btn-success mt-3"><i class="fa-solid fa-heart-circle-check" title="Favourite"></i></button></small></a>
                                              {% endif %}
+                                        {% else %}
+                                        <a href="{% url 'remove_from_favourites' product.id %}"><button type="button" class="btn btn-secondary mt-3"><i class="fa-solid fa-heart" title="Log in to favourite"></i></button></a>
+                                        {% endif %}
                                         </div>
                                         <div>
                                             {% if request.user.is_superuser %}
