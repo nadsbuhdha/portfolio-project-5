@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views.generic import TemplateView
+from profiles.models import Favourites
 from django.contrib import messages
+from django.http import Http404
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
@@ -19,6 +21,15 @@ def all_products(request):
     gender_type = []
     sort = None
     direction = None
+
+
+    try:
+        favourites = get_object_or_404(Favourites, user=request.user.id)
+    except Http404:
+        favourites = {}
+        favourites = None
+    else:
+        favourites = favourites.product.all()
 
     if request.GET:
 
@@ -76,6 +87,7 @@ def all_products(request):
         'gender': gender,
         'gender_type': gender_type,
         'current_sorting': current_sorting,
+        'favourites': favourites,
     }
 
     return render(request, 'products/products.html', context)
@@ -85,10 +97,20 @@ def product_detail(request, product_id):
     """
     product detail view
     """
+
+    try:
+        favourites = get_object_or_404(Favourites, user=request.user.id)
+    except Http404:
+        favourites = {}
+        favourites = None
+    else:
+        favourites = favourites.product.all()
+
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
+        'favourites': favourites,
     }
 
     return render(request, 'products/product_detail.html', context)
