@@ -23,7 +23,7 @@ def profile(request):
         favourites_items = favourites.product.all()
 
     if not favourites_items :
-        messages.info(request, 'Your Wishlist is empty!')
+        messages.info(request, 'Your favourites is empty!')
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
