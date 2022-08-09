@@ -6,8 +6,8 @@ from django.http import Http404
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
-from .models import Product, Brand, Category
-from .forms import ProductForm
+from .models import Product, Brand, Category, Review
+from .forms import ProductForm, ReviewForm
 # Create your views here.
 
 def all_products(request):
@@ -107,10 +107,33 @@ def product_detail(request, product_id):
         favourites = favourites.product.all()
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
+
+    if request.method == 'POST':
+
+        review_form = ReviewForm(data=request.POST or None)
+
+        if request.user.is_authenticated and review_form.is_valid():
+
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+            messages.success(
+                request, (
+                    f'Thank you for reviewing "{product.name[:25]}.."! '
+                    'You can now view and remove it below.'
+                )
+            )
+        return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        review_form = ReviewForm()
 
     context = {
         'product': product,
         'favourites': favourites,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)

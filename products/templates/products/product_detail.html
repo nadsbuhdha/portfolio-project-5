@@ -11,7 +11,7 @@
 
 {% block content %}
     <div class="container-fluid">
-        <div class="row">
+        <div class="row p-3">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -116,6 +116,48 @@
                             {% endwith %}
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <hr>
+                <div class="col-12 col-md-6 col-lg-8 col-xl-8 mb-5">
+                    <h3>Reviews:</h3>
+                    <div class="card-body">
+                        {% for review in reviews %}
+                        <div class="comments" style="padding: 15px;">
+                            <p>
+                                <span>
+                                    {{ review.user }}
+                                </span>
+                                <span>
+                                    {{ review.created_on }}
+                                </span> wrote:
+                            </p>
+                            {{ review.review_body | linebreaks }}
+                            <hr>
+                        </div>
+                        
+                    </div>
+                </div>
+                    <div class="col p-2">
+                        {% if request.user.is_authenticated %}
+                            <h3>Add a review</h3>
+                            <form class="form" method="POST">
+                                <p> Reviewing as {{ review.user }}</p>
+                                {% csrf_token %}
+                                {{ review_form|crispy }}
+                                <button class="btn btn-dark" type="submit"> Post Review</button>
+                            </form>
+                        {% else %}
+                            <div>
+                                <a href="{% url 'account_signup' %}">Create an account</a> or
+                                <a href="{% url 'account_login' %}">login</a> to review this product.
+                            </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
