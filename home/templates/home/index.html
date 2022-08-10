@@ -5,34 +5,24 @@
 
 
 {% block page_header %}
-<!-- <div class ="container header-container">
-    <div class="row">
-        <div class="col">
-
-        </div>
-    </div>
-</div> -->
 
 {% endblock %}
 
 {% include '../includes/carousel.html' %}
 
-<!-- <div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1>
-                test text
-            </h1>
-            <div class="my-5">
-                <h1>
-                    test 2
-                </h1>
-            </div>
+<div class="text-center">
+    <h2 class="text-center mt-4">
+        ABOUT US
+    </h2>
 
-        </div>
-    </div>
-</div> -->
-
+    <p class= "text-center m-5"> 
+        The Sole Society strives to bring you the freshest sneakers from across the globe. 
+        Get your hands on drops from some of the world's biggest brands like Nike, adidas & Vans. Stay ahead of the game.
+    </p>
+    <a href="{% url 'products' %}">
+        <button class="btn btn-dark text-center mb-5">View All Products</button>
+    </a>
+</div>
 
 
 {% endblock %}

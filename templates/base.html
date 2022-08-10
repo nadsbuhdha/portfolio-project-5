@@ -34,7 +34,7 @@
     {% endblock %}
 
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header class="container-fluid">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -124,6 +124,7 @@
             {% endwith %}
         {% endfor %}
     </div>
+
 {% endif %}
 
     {% block page_header %}
@@ -131,6 +132,64 @@
 
     {% block content %}
     {% endblock %}
+<!--Footer-->
+
+    <footer class="text-center text-white footer mt-auto" style="background-color:#f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <div class="mb-1">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://facebook.com" 
+              target="_blank" 
+              rel="noopener" 
+              aria-label="Visit our Facebook page (opens in a new tab)"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://twitter.com" 
+              target="_blank" 
+              rel="noopener" 
+              aria-label="Visit our Twitter page (opens in a new tab)"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- YouTube -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://youtube.com" 
+              target="_blank" 
+              rel="noopener" 
+              aria-label="Visit our YouTube page (opens in a new tab)"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-youtube-square"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://instagram.com"
+              role="button"
+              data-mdb-ripple-color="dark"
+              target="_blank" rel="noopener" 
+              aria-label="Visit our Instagram page (opens in a new tab)"
+              ><i class="fab fa-instagram sm-icon"></i
+            ></a>
+              </div>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+</footer>  
 
     {% block postloadjs %}
 
