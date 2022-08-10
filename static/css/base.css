@@ -76,6 +76,8 @@ header {
   cursor: pointer;
 }
 
+.incre
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -130,6 +132,13 @@ header {
   border-radius: 0;
 }
 
+.increment-qty {
+  border-radius: 0px     10px      10px           0px;
+}
+
+.decrement-qty {
+  border-radius: 10px     0px      0px           10px;
+}
 
 
 /*  media queries */
