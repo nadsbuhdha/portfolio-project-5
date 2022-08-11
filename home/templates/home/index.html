@@ -23,25 +23,4 @@
         <button class="btn btn-dark text-center mb-5">View All Products</button>
     </a>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-5 col-12 mx-auto py-5">
-            <form action="" method="POST">
-                {% csrf_token %}
-                {{ newsletter_signup |crispy }}
-                <input type="submit" class="btn btn-blue">
-            </form>
-        </div>
-    </div>
-</div>
-<form class="newsletter-form" action="{% url 'newsletter' %}" method="POST">
-    {% csrf_token %}
-      <div class="input-group mb-3">
-          <input class="form-control" type="email" name="email" placeholder="Enter your email address"
-              aria-label="Recipient's email" aria-describedby="subscribe-button">
-          <button class="btn btn-primary" id="subscribe-button" type="submit">
-              <i class="fas fa-paper-plane"></i>
-          </button>
-      </div>
-  </form>
 {% endblock %}
