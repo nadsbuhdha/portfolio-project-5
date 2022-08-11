@@ -1,6 +1,6 @@
 from django.db import models
 
-class Newletter(models.Model):
+class Newsletter(models.Model):
     """ A model for users to subscribe to a newsletter """
 
     email = models.EmailField(max_length=254, null=False, blank=False)
