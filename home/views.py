@@ -38,3 +38,30 @@ def newsletter_signup(request):
     }
 
     return render(request, 'home/newsletter.html', context)
+
+
+
+def newsletter_unsub(request):
+    """ A view to handle newsletter unsubscriptions """
+    form = NewsletterForm()
+
+    if request.method == 'POST':
+        form = NewsletterForm(request.POST)
+        if form.is_valid():
+            instance = form.save(commit=False)
+            if Newsletter.objects.filter(
+                    email=instance.email).exists():
+                Newsletter.objects.filter(
+                    email=instance.email).delete()
+                messages.success(request, 'You have successfully unsubscribed \
+                    from our newsletter, we are sorry to see you go.')
+                return redirect(reverse('home'))
+            else:
+                messages.error(request, 'Sorry but we did not find your email address. \
+                    Please check it has been entered correctly.')
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'home/newsletter_unsub.html', context)
