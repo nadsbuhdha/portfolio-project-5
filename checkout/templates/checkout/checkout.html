@@ -107,7 +107,7 @@
                     </div>
                   </fieldset>
                   <fieldset>
-                    <legend class="fieldset label"> payment</legend>
+                    <legend class="fieldset label"> Payment</legend>
                     <!--stripe elements -->
                     <div id="card-element"></div>
 
@@ -116,20 +116,20 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                   </fieldset>
 
-                  <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_bag' %}" class="btn btn-outline-blue">
-                      <span class="icon">
+                  <div class="submit-button text-right mt-5 mb-4">
+                    <a href="{% url 'view_bag' %}" class="btn btn-dark">
+                      <span class="icon mb-5">
                         <i class="fas fa-chevron-left"></i>
                       </span>
-                      <span class="font-weight-bold">Adjust Bag</span>
+                      <span class=" btn-card font-weight-bold mb-5">Adjust Bag</span>
                     </a>
-                    <button id="submit-button" class="btn btn-blue">
-                      <span class="font-weight-bold">Complete Order</span>
+                    <button id="submit-button" class="btn btn-dark">
+                      <span class="font-weight-bold mb-5">Complete Order</span>
                       <span class="icon">
                         <i class="fas fa-lock"></i>
                       </span>
                     </button>
-                    <p class="small text-danger">
+                    <p class="small text-danger mt-4 ml-4">
                       <span class="icon">
                         <i class="fas fa-exclamation-circle"></i>
                       </span>
