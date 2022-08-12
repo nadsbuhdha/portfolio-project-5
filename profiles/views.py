@@ -5,6 +5,7 @@ from django.contrib import messages
 from products.models import Product
 from checkout.models import Order
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 
 
 from .models import UserProfile, Favourites
@@ -101,7 +102,7 @@ def add_to_favourites(request, product_id):
         messages.info(
             request, f'Added {product.name[:30]}.. favourites.'
         )
-    return redirect(reverse('product_detail', args=[product_id]))
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required

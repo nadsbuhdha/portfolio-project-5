@@ -138,14 +138,17 @@
                             {{ review.review_body | linebreaks }}
                             <hr>
                         </div>
-                        
+                    {% endfor %}
                     </div>
                 </div>
-                    <div class="col p-2">
+                
+                    <div class="col p-2 mb-5">
                         {% if request.user.is_authenticated %}
                             <h3>Add a review</h3>
                             <form class="form" method="POST">
+                                {% for review in reviews %}
                                 <p> Reviewing as {{ review.user }}</p>
+                                {% endfor %}
                                 {% csrf_token %}
                                 {{ review_form|crispy }}
                                 <button class="btn btn-dark" type="submit"> Post Review</button>
@@ -156,7 +159,7 @@
                                 <a href="{% url 'account_login' %}">login</a> to review this product.
                             </div>
                         {% endif %}
-                        {% endfor %}
+                    
                     </div>
                 </div>
             </div>
