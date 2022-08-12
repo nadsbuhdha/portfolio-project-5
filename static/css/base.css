@@ -142,6 +142,15 @@ header {
 }
 
 
+.login {
+  max-width: 50%;
+  margin:auto
+}
+
+#signup_form label {
+  display:block;
+}
+
 /*  media queries */
 
   @media (min-width: 62em) {
