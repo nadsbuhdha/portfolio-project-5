@@ -65,3 +65,9 @@ def newsletter_unsub(request):
     }
 
     return render(request, 'home/newsletter_unsub.html', context)
+
+
+
+
+def error_handle_404(request, exception):
+    return render(request, '404.html')
