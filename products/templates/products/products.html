@@ -49,8 +49,8 @@
                                     <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
                                 </a>
                             {% else %}
-                                <a href="#">
-                                    <img src="#" class="card-img-top" alt="no image available">
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img src="{{ MEDIA_URL }}noimg.webp" class="card-img-top" alt="no image available">
                                 </a>
                             {% endif %}
                             <div class="card-body">

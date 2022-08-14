@@ -20,7 +20,7 @@
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimg.webp" alt="{{ product.name }}">
                         </a>
                     {% endif %}
                 </div>
@@ -136,6 +136,8 @@
                                 </span> wrote:
                             </p>
                             {{ review.review_body | linebreaks }}
+                            
+                            <a href="{% url 'delete_review' review.id %}"> delete </a>
                             <hr>
                         </div>
                     {% endfor %}

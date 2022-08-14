@@ -8,6 +8,7 @@ from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from .models import Product, Brand, Category, Review
 from .forms import ProductForm, ReviewForm
+from django.core.exceptions import PermissionDenied
 # Create your views here.
 
 def all_products(request):
@@ -108,10 +109,16 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
-
+    user_comments = product.reviews.filter(user=request.user)
     if request.method == 'POST':
 
         review_form = ReviewForm(data=request.POST or None)
+        if user_comments:
+                # Users cant review once
+                messages.error(request, "You have already reviewed this product")
+                return redirect(reverse('product_detail', args=[product.id]))
+                
+
 
         if request.user.is_authenticated and review_form.is_valid():
 
@@ -208,3 +215,26 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def delete_review(request, product_id):
+
+    product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
+
+    if request.method == 'POST':
+
+        review_form = ReviewForm(data=request.POST or None)
+
+        if request.user.is_authenticated and review_form.is_valid():
+
+            review_form.instance.user = request.user
+            reviews.product = product
+            reviews.delete()
+            messages.success(
+                request, (
+                    'your review has been deleted'
+                )
+            )
+    return redirect(reverse('product_detail', args=[product.id]))
