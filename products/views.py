@@ -110,32 +110,6 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
     review_form = ReviewForm(data=request.POST or None)
-    # user_comments = product.reviews.filter(user=request.user)
-    # if request.method == 'POST':
-
-        # review_form = ReviewForm(data=request.POST or None)
-        # if user_comments:
-        #         # Users cant review once
-        #         messages.error(request, "You have already reviewed this product")
-        #         return redirect(reverse('product_detail', args=[product.id]))
-                
-
-
-    #     if request.user.is_authenticated and review_form.is_valid():
-
-    #         review_form.instance.user = request.user
-    #         review = review_form.save(commit=False)
-    #         review.product = product
-    #         review.save()
-    #         messages.success(
-    #             request, (
-    #                 f'Thank you for reviewing "{product.name[:25]}.."! '
-    #                 'You can now view and remove it below.'
-    #             )
-    #         )
-    #     return redirect(reverse('product_detail', args=[product.id]))
-    # else:
-    # review_form = ReviewForm()
 
     context = {
         'product': product,

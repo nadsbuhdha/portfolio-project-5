@@ -137,11 +137,12 @@
                             </p>
                             {{ review.review_body | linebreaks }}
                             {% if request.user.is_authenticated %}
-                            
+                            {% if request.user == review.user %}
                             <form action="{% url 'delete_review' product.id review.user.username %}" method="POST">
                                 {% csrf_token %}
                                 <button type="submit" class="btn red-btn">Delete</button>
                             </form>
+                            {% endif %}
                             {% endif %}
                             <hr>
                         </div>
