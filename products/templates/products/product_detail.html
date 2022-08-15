@@ -136,8 +136,13 @@
                                 </span> wrote:
                             </p>
                             {{ review.review_body | linebreaks }}
+                            {% if request.user.is_authenticated %}
                             
-                            <a href="{% url 'delete_review' review.id %}"> delete </a>
+                            <form action="{% url 'delete_review' product.id review.user.username %}" method="POST">
+                                {% csrf_token %}
+                                <button type="submit" class="btn red-btn">Delete</button>
+                            </form>
+                            {% endif %}
                             <hr>
                         </div>
                     {% endfor %}
@@ -147,10 +152,7 @@
                     <div class="col p-2 mb-5">
                         {% if request.user.is_authenticated %}
                             <h3>Add a review</h3>
-                            <form class="form" method="POST">
-                                {% for review in reviews %}
-                                <p> Reviewing as {{ review.user }}</p>
-                                {% endfor %}
+                            <form class="form" method="POST"  action="{% url 'add_review' product.id %}">
                                 {% csrf_token %}
                                 {{ review_form|crispy }}
                                 <button class="btn btn-dark" type="submit"> Post Review</button>

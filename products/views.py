@@ -109,32 +109,33 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
-    user_comments = product.reviews.filter(user=request.user)
-    if request.method == 'POST':
+    review_form = ReviewForm(data=request.POST or None)
+    # user_comments = product.reviews.filter(user=request.user)
+    # if request.method == 'POST':
 
-        review_form = ReviewForm(data=request.POST or None)
-        if user_comments:
-                # Users cant review once
-                messages.error(request, "You have already reviewed this product")
-                return redirect(reverse('product_detail', args=[product.id]))
+        # review_form = ReviewForm(data=request.POST or None)
+        # if user_comments:
+        #         # Users cant review once
+        #         messages.error(request, "You have already reviewed this product")
+        #         return redirect(reverse('product_detail', args=[product.id]))
                 
 
 
-        if request.user.is_authenticated and review_form.is_valid():
+    #     if request.user.is_authenticated and review_form.is_valid():
 
-            review_form.instance.user = request.user
-            review = review_form.save(commit=False)
-            review.product = product
-            review.save()
-            messages.success(
-                request, (
-                    f'Thank you for reviewing "{product.name[:25]}.."! '
-                    'You can now view and remove it below.'
-                )
-            )
-        return redirect(reverse('product_detail', args=[product.id]))
-    else:
-        review_form = ReviewForm()
+    #         review_form.instance.user = request.user
+    #         review = review_form.save(commit=False)
+    #         review.product = product
+    #         review.save()
+    #         messages.success(
+    #             request, (
+    #                 f'Thank you for reviewing "{product.name[:25]}.."! '
+    #                 'You can now view and remove it below.'
+    #             )
+    #         )
+    #     return redirect(reverse('product_detail', args=[product.id]))
+    # else:
+    # review_form = ReviewForm()
 
     context = {
         'product': product,
@@ -218,23 +219,55 @@ def delete_product(request, product_id):
 
 
 @login_required
-def delete_review(request, product_id):
-
+def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product)
-
+    user_comments = product.reviews.filter(user=request.user)
     if request.method == 'POST':
 
         review_form = ReviewForm(data=request.POST or None)
+        if user_comments:
+                # Users cant review once
+                messages.error(request, "You have already reviewed this product")
+                return redirect(reverse('product_detail', args=[product.id]))
+                
+
 
         if request.user.is_authenticated and review_form.is_valid():
 
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+            messages.success(
+                request, (
+                    f'Thank you for reviewing "{product.name[:25]}.."! '
+                    'You can now view and remove it below.'
+                )
+            )
+        return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        review_form = ReviewForm()    
+
+
+
+@login_required
+def delete_review(request, product_id, review_id):
+    product = get_object_or_404(Product, pk=product_id)
+    reviews = get_object_or_404(Review, product=product, user__username=review_id)
+    review_form = ReviewForm(data=request.POST or None)
+
+    if request.user == reviews.user:
+        if request.method == 'POST':
             review_form.instance.user = request.user
             reviews.product = product
             reviews.delete()
             messages.success(
                 request, (
-                    'your review has been deleted'
-                )
-            )
-    return redirect(reverse('product_detail', args=[product.id]))
+                    'your review has been deleted'))     
+        else:
+            messages.error(request, 'Invalid request')
+        return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        messages.error(request, "Sorry, you don't have permission to do that.")
+        return redirect(reverse('product_detail', args=[product.id]))
