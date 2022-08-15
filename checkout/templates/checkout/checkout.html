@@ -41,7 +41,7 @@
                   {% if item.product.image %}
                   <img src="{{ item.product.image.url }}" alt="{{ product.name }}" class="w-100">
                   {% else %}
-                  <img src="{{ MEDIA_URL }}.noimage.png" alt="{{ product.name }}" class="w-100">
+                  <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}" class="w-100">
                   {% endif %}
                 </a>
               </div>
@@ -141,13 +141,6 @@
         </div>
     </div>
 </div>
-<!-- <div id="loading-overlay">
-  <h1 class="text-light logo-font loading-spinner">
-      <span class="icon">
-          <i class="fas fa-3x fa-sync-alt fa-spin"></i>
-      </span>
-  </h1>
-</div> -->
 
 <div id="loading-overlay">
   <div class="overlay__inner">
