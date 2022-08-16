@@ -1,0 +1,1 @@
+web: gunicorn sole_society.wsgi:application
