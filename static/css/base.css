@@ -151,6 +151,26 @@ header {
   display:block;
 }
 
+
+/* footer styling */ 
+
+footer {
+  background-color: #080808;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+#subscribe-button {
+  background-color: pink;
+}
+
+footer a:hover {
+  color:pink;
+}
+
 /*  media queries */
 
   @media (min-width: 62em) {
