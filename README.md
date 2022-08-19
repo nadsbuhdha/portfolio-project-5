@@ -195,3 +195,44 @@ Before building the site, Balsamiq was utilised to create wireframes of the site
 |Adding Products as superuser | ![desktop add product](document_assets/images/desktop_add_product.png)|  ![mobile add product](document_assets/images/mobile_add_product.png) |
 | Editing Products as superuser|![desktop edit product](document_assets/images/desktop_edit_product.png)|![mobile edit product](document_assets/images/mobile_edit_product.png)|
 | Admin Products View| ![desktop product management view](document_assets/images/desktop_product_management.png) | ![mobile product management view](document_assets/images/mobile_product_management.png) |
+
+
+### Colour Schemes
+
+During the design phase of building the site, various sneaker focuesed ecommerece stores were researched. Colours are used sparingly so I decided to adopt this neutral approach aesthetically. 
+
+#FFFFFF white was used for the majority of the background and header. 
+#212529  was used for buttons and product cards.
+#080808 was used for the footer
+
+### Fonts 
+
+Nunito was used as the primary font across the site. After research into ecommerece fonts, Nunito was chosen for its well-balanced appearance and rounded asaesthetic, which compliments the rounded border radius which features across the site. San-serif was chosen as a backup font, should Nunito fail. 
+
+## Marketing
+
+ADD MARKETING SECTION
+
+
+## Features 
+
+* The entire website has been designed with a responsive mobile first approach.
+
+The Header of the site features the site logo which links back to the homepage. The navigation links allow the shopper to navagate and access differening sections across the website.
+![header](document_assets/images/ss_header.png)
+
+The header features a dropdown menu where users can navagate to products filtered by the specific category they pick. 
+![drop down menu](document_assets/images/dropdownmenu.png)
+
+When a user send an item to the bag, the bag on the header highlights and displays current bag price.
+![highlighted bag](document_assets/images/highlighted_bag.png)
+
+Users can search for specific products with the use of the searchbar. 
+![search bar](document_assets/images/searchbar.png)
+
+The homepage features a carousel of product images. The carousel features a button where users can navagate to all products.
+![carousel](document_assets/images/caroulsel.png)
+
+The footer features on each page. Social media icons feautre on the footer, including the facebook page. Users can also sign up to the newsletter. 
+![footer](document_assets/images/footer.png)
+

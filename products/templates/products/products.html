@@ -38,8 +38,8 @@
                 <option value="brand__name___desc" {% if current_sorting == 'brand_name___desc' %}selected{% endif %}>Brand (Z-A)</option>
             </select>
         </div>
+    </div>
         <div class="row">
-            <div class="row">
                 {% for product in products %}
                     <!-- Products -->
                     <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
@@ -89,9 +89,8 @@
                         </div>
                     </div>
                 {% endfor %}
-            </div>
+        
         </div>
-    </div>
 </div>
 
 
