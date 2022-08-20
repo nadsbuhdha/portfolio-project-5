@@ -236,3 +236,152 @@ The homepage features a carousel of product images. The carousel features a butt
 The footer features on each page. Social media icons feautre on the footer, including the facebook page. Users can also sign up to the newsletter. 
 ![footer](document_assets/images/footer.png)
 
+### Products Page 
+
+The products page features all of the stores products in individual cards. Products can be filtered by Mens, Womens, Accessories & special offers. Products can be futher filtered by best sellers, exlusives, new arrivals, sport shoes and essentials. 
+Products can also be sorted by price, rating, name, category and brand. 
+![products page](document_assets/images/products_page.png)
+
+The product card features the name of the product, the brand, the price,  rating for the product and the ability to favourite a product. 
+![products page](document_assets/images/product_card.png)
+
+
+### Product detail
+
+The product detail page features The name of the product, a larger version of the product image, the the product brand, the price, the product rating and a short description of the product.
+Users can favourite the product from here. 
+User can select the size and quantity of the product from this page. 
+Once size and quantity users can either add the product to the bag or continue to shop. 
+Users can view reviews of the product and authenticated users can leave a review of a product. 
+![products detail](document_assets/images/product_detail.png)
+
+
+Reviews
+
+### Bag page
+
+If a user clicks on the bag page and there are no products in the bag then an empty bag message is displayed 
+![empty bag](document_assets/images/empty_bag.png)
+
+
+When a user has products in their bag, the product image, name, sku, price and quantity are displayed. Users can update the quantity of a product from the shopping bag. Users can also remove a product from the bag. The grand total, including the delivery fee (if there is one) is, also featured towards the bottom of the page. The proceed to checkout button or continue shopping buttons are also present. 
+![shopping bag](document_assets/images/shopping_bag.png)
+
+
+
+### Checkout Page
+
+The checkout page features an overview of the products the user is intending to purcahse. 
+A form is present for the user to fill out in order to complete the purchase.
+Included in the form is a section for users to input their card details. This is connected to stripe payments system. 
+Under the payment form, a message is displayed informing the shopper the amount to be charged on the provided card.
+Adjust bag and complete order buttons are featured so users can edit their order or complete their order
+![checkout page](document_assets/images/checkout_page.png)
+
+### Checkout Success 
+
+![payment success](document_assets/images/payment_success.png)
+
+The payment success page shows a summary of the users order, with an order number.
+Users are notified of an email that will be sent to confirm their order. 
+
+
+The payment system has been connected to a webhook to ensure payments succeed and products are sent. 
+![payment success](document_assets/images/webhook_succeeded.png)
+
+
+### My Profile 
+
+User profile page features a form for users to store default delivery information as well as their order history. 
+User profile also features the products the users has favourited. 
+![My Profile](document_assets/images/my_profile.png)
+
+
+### Account Pages 
+
+| Page        | Feature  | Image  |
+| ------------- |:-------------:| -----:|
+| Sign In | The sign in page allows users to sign in with their account details |![Sign In](document_assets/images/sign_in.png)|
+| Sign Out | Users can sign out from this page|![Sign Out](document_assets/images/sign_out.png)|
+| Sign Up | Unregistered users can sign up to the website here |![Sign Up](document_assets/images/sign_up.png)|
+
+
+### Product Management
+
+| Page        | Feature  | Image  |
+| ------------- |:-------------:| -----:|
+| Add Products | This page allows users to add new products using the form |![Add Product](document_assets/images/add_product.png)|
+| Edit Products | This page allows users to edit products using the form with the previously entered data |![Edit Product](document_assets/images/edit_product.png)|
+| Delete Products | From the products page, superusers can delete products|![Delete Product](document_assets/images/delete_product.png)|
+
+
+### Review 
+
+Signed in users can leave reviews on specific products. Users can also decide to delete their reviews.
+![Reviews](document_assets/images/reviews.png)
+
+Users can only leave one review per product. 
+![one](document_assets/images/one_review.png)
+
+### 404 Page
+
+** add image **
+A custom 404 page is utilised. Users can click the 'return home' button to return to the home page.
+
+## Technologies Used
+
+### Languages 
+* HTML5
+* CSS3
+* JavaScript
+* Python
+
+### Libraries and Frameworks
+* Django - web framework.
+
+* Bootstrap 5 -  used for the styling and responsiveness of the site. 
+
+* Google Fonts - used for fonts across the site
+
+* Font - Awesome  used across the website to add icons.
+
+* jQuery - used to simplify HTML and DOM manipulation.
+
+### Packages 
+
+* Django Allauth 
+
+* Django Crispy Forms
+
+* Django Countries
+
+* Pillow.
+
+* Gunicorn.
+
+
+### Database 
+
+* SQLite.
+
+* Heroku Postgres database.
+
+
+### Tools, storage & services
+
+* Amazon Web Service - used to store static files and media.
+
+* Stripe - Used to handle and process online payment.
+
+* GitPod
+
+* Github
+
+* Heroku - Deployed site was hosted.
+
+* W3C Markup and Jigsaw validation - used to test and validate the HTML and CSS.
+
+* PEP8 - for validating the python code.
+
+* JSHINT - for validating the javasctipy code.
+

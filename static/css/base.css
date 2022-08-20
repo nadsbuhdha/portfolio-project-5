@@ -171,6 +171,9 @@ footer a:hover {
   color:pink;
 }
 
+
+
+
 /*  media queries */
 
   @media (min-width: 62em) {
@@ -200,4 +203,9 @@ footer a:hover {
   .carousel-caption p
    {
     margin-bottom: 0.8rem;
-  }}
+    
+  }
+  #order-number p {
+    word-break: break-all
+  }
+}
