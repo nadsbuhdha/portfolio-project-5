@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /accounts/
+Sitemap: https://sole-society.herokuapp.com/sitemap.xml

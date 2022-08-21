@@ -214,6 +214,20 @@ Nunito was used as the primary font across the site. After research into ecommer
 ADD MARKETING SECTION
 
 
+### Search Engine Optimisation
+
+In order to improve the search engine optimisation of the site, research was conducted to search for relevant keywords to use in meta tags in the project head element. [Wordtracker](www.wordtracker.com) was utilised to find keywords that were high in volume yet relatively low in competition to insert into the head of the site. A mixture of short and long tail keywords were selected. 
+
+The selected keywords are:
+* air maxes 
+* sneakers 
+* nike jordans 
+* nike, snkrs 
+* basketball shoe 
+* nike shoes for women 
+* white high top converse
+
+
 ## Features 
 
 * The entire website has been designed with a responsive mobile first approach.
