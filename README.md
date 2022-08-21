@@ -422,3 +422,183 @@ A custom 404 page is utilised. Users can click the 'return home' button to retur
 
 * JSHINT - for validating the javasctipy code.
 
+## Testing 
+
+Add testing 
+
+
+## Deployment 
+
+
+### Heroku 
+
+Heroku Deployment
+
+*   In Heroku, create a new app
+*   Created a unique name and location for the app
+*   On the resources tab, provision a new Heroku Postgres database
+*   In the settings tab, go to the Config Vars sections and select reveal config vars 
+*   *Configure variables  in Heroku
+*	In the gitpod workspace, install dj_database_url and psycopg2 using pip3 install
+    dj_database_url & pip3 install psycopg2-binary
+*   Ensure Heroku installs the apps requirements by using the pip3 freeze > requirements.txt command 
+*   In settings.py import dj_database_url
+*   Still in settings.py remove the default database and replace with :  
+        DATABASES = {
+        'default': dj_database_url.parse('YOUR_DATABASE_URL_FROM_HEROKU')
+        }
+*   Migrate changes with python3 manage.py migrate
+*   As this is a new database, the data needs adding to the new database, do this by using the
+    command "./manage.py loaddata db.json" in the terminal.
+*   Create a new SuperUser for the Postgres database
+*   In settings.py remove the datebase and replace with an if statement so that it connects 
+    postgres in Heroku and sqlite in version control 
+*   if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+        else:
+        DATABASES = {
+                'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+
+*   Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the        Django app. Use freeze > requirements.txt to add this to the requirements. 
+
+*   Inside the Procfile add web: gunicorn shoes_and_more.wsgi:application
+*   Disable Heroku collect static
+*   Add the Heroku hostname to allowed hosts in settings.py
+*   Produce a new Django secret key and add this to the Heroku config variables
+*   Set debug to be true only if there's a variable called development in the environment.
+*   Add and commit changes, then push to github and Heroku
+*   In the deploy tab in Heroku connect the app to Github by clicking Github and search for the     project’s repository. Once found, click  Enable Automatic Deploys to ensure project is automatically deployed to Heroku as well as github each time it’s pushed
+*   In settings.py and ensure the secret key is called from the enviroment using SECRET_KEY = os.environ.get('SECRET_KEY', '')
+*   In settings.py set DEBUG = 'DEVELOPMENT' in os.environ
+
+## Amaon Web Service 
+
+AWS was used in order to store static and media files. 
+
+* On the amazon web service site, create a new account or log in
+
+* Once logged in, navagate to the AWS Managment Console. 
+
+* Create New Bucket using Create Bucket button 
+
+* Create a new name for the bucket 
+ 
+* Object ownership: ACLs enabled, Bucket owner preffered
+
+* In Block Public Access settings: Uncheck to allow public access
+* Acknowledge that the current settings will result that the objects within the bucket will become public
+
+* Click Create Bucket
+
+* In the properties section of the newly created bucket click edit and enable. 
+* Hosting type: choose Host a Static Website
+* Index document: index.html
+* Error document: error.html
+* Save the changes made.
+
+
+* On the permissions tab, navagate to the CORS section and input the following code:
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+
+
+* On the buckets policy, still within the permissions tab, Select Type of Policy: choose S3 Bucket Policy. Then, Effect: choose Allow Principal: *, Actions: select GetObject, 
+Complete the (ARN), from the Bucket ARN back in the Bucket Policy. Click Add statement Than Click Generate Policy and copy the policy into bucket policy editor. 
+
+* Add a slash star on to the end of the resource key to allow access to all resources  the bucket then save. 
+
+* In the Access Control List, clock on Everyone (public access), and check List box accept the warning and then save. 
+
+* With the bucket now created navagate to the Identity and Access Management (IAM) through the AWS Management Console. 
+
+* Create a group for our user to live in and name the group. 
+
+* Click Create Policy
+
+* Select import managed policy, then import the AmazonS3FullAccess policy.
+
+* Copy the ARN into the JSON editor. 
+
+* Click on review (appears after tags)
+
+* Add a policy name and description - then click Create Policy. 
+
+* Attach policy to the created group. 
+
+* Download the csv file which is created. 
+
+* In the terminal install Boto3 and Django-storages
+
+* Freeze requirements.txt file
+
+* Add storages to the Installed Apps in settings.py.
+
+* In settings.py add 
+if 'USE_AWS' in os.environ:
+
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'sole-society'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+
+* In Heroku set the config variables using the variables from the csv file. 
+
+* Remove DISABLE_COLLECTSTATIC from Heroku config variables. 
+
+* In the project file root directory, create a file called custom_storages.py 
+
+* Inside add: 
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+   location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+   location = settings.MEDIAFILES_LOCATION
+
+* Back in AWS create a folder named 'media'.
+
+* Upload media to this folder. 
+
+* This is where project files will be hosted. 
