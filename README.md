@@ -211,12 +211,35 @@ Nunito was used as the primary font across the site. After research into ecommer
 
 ## Marketing
 
-ADD MARKETING SECTION
+### Business Model
+
+### Company description
+The Sole Society is a B2C retail company that sells branded footwear to consumers. The Society does not sell original products but products from external branded wholesale retailers or brand manufacturers.  
+### Target Audience 
+The core target market for the Sole Society is fashion-oriented individuals ranging in age from 12 – 40. 
+
+
+### Marketing Strategy
+Two specific web marketing strategies have been chosen for the Sole Society:  
+Social Media Marketing 
+
+A Facebook page has been created for the Sole Society.
+
+A variety of benefits are acquired with a Facebook marketing page including: 
+* Brand awareness. 
+* Driving traffic to the sole society website through Facebook links
+* Targeted advertising which can be adhered to specific demographics
+* Customer interaction through posted links generating communication between business and consumer
+The live Facebook Business page can be viewed (here ** add)  
+
+Email Marketing.
+Users can voluntarily sign up and subscribe to the site newsletter. Users can be kept up to date with the latest news and offers from the site via the emailed newsletter. 
+Once a user is registered, their email is stored in the site database which can be accessed through the admin panel. Users are notified via the site when they have successfully subscribed to the newsletter. 
 
 
 ### Search Engine Optimisation
 
-In order to improve the search engine optimisation of the site, research was conducted to search for relevant keywords to use in meta tags in the project head element. [Wordtracker](www.wordtracker.com) was utilised to find keywords that were high in volume yet relatively low in competition to insert into the head of the site. A mixture of short and long tail keywords were selected. 
+In order to improve the search engine optimisation of the site, research was conducted to search for relevant keywords to use in meta tags in the project head element. [Wordtracker](www.wordtracker.com) was utilised to find keywords that were high in volume, yet relatively low in competition to insert into the head of the site. A mixture of short and long tail keywords were selected. 
 
 The selected keywords are:
 * air maxes 
