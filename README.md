@@ -429,6 +429,32 @@ Add testing
 
 ## Deployment 
 
+Gitpod workspace was used to develop this project, utilising the code institute template. The project was committed and pushed to github. The final project is deployed on Heroku. Static and media files are stored AWS S3. 
+
+
+### Forking The Repository
+
+Forking a repository of this github project will allow a copy of the original repository to be made and any changes to the copy will not affect the original.
+To fork a repository:
+* Access the GitHub account and find the  repository.
+* On the top right of the page click 'fork'. 
+* A copy of the repository will be found in in your GitHub account. 
+
+### Cloning The Repository
+
+Cloning a repository downloads an existing Git repository to your local computer. 
+In order to do this: 
+
+* Whilst on github, go to the desired github repository.
+* Under the repository name click Clone. 
+* To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+* Open Git Bash.
+* Access the directory you want the clone to be made.
+* Type git clone, and then paste and enter the URL you copied.
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+* The  local clone will be created.
+
 
 ### Heroku 
 
