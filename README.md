@@ -432,7 +432,7 @@ The core target market for the Sole Society is fashion-oriented individuals rang
 Two specific web marketing strategies have been chosen for the Sole Society:  
 Social Media Marketing 
 
-A Facebook page has been created for the Sole Society.
+A Facebook page has been created for the Sole Society. The facebook page can be viewed [here](https://www.facebook.com/people/The-Sole-Society/100084853331729/)
 
 A variety of benefits are acquired with a Facebook marketing page including: 
 * Brand awareness. 
@@ -440,6 +440,11 @@ A variety of benefits are acquired with a Facebook marketing page including:
 * Targeted advertising which can be adhered to specific demographics
 * Customer interaction through posted links generating communication between business and consumer
 The live Facebook Business page can be viewed (here ** add)  
+
+### Facebook 
+
+![facebook page](document_assets/images/facebook_page.png)
+![facebook page](document_assets/images/facebook_page_two.png)
 
 Email Marketing.
 Users can voluntarily sign up and subscribe to the site newsletter. Users can be kept up to date with the latest news and offers from the site via the emailed newsletter. 
@@ -957,3 +962,23 @@ from storages.backends.s3boto3 import S3Boto3Storage
 * Upload media to this folder. 
 
 * This is where project files will be hosted. 
+
+
+## Finished Product
+
+| Page        | Desktop  | Mobile version  |
+| ------------- |:-------------:| -----:|
+| Home Page | ![Desktop Home](document_assets/images/finished_desktop_home.png)|![Mobile Home](document_assets/images/finished_mob_home.png)|
+| Footer | ![Desktop Footer](document_assets/images/finished_footer_desktop.png)|![Mobile Footer](document_assets/images/finished_footer_mob.png)|
+| All Products | ![Desktop all Products](document_assets/images/finished_all_products_desktop.png)  | ![Mobile all Products](document_assets/images/finished_all_products_mob.png)  |
+| Product Details | ![desktop product detail](document_assets/images/finished_product_detail_desktop.png)|  ![mobile product detail](document_assets/images/finished_review_mob.png)|
+| Product Review | ![desktop review ](document_assets/images/finished_review_desktop.png)|  ![mobile product review](document_assets/images/finished_product_detail_mob.png)|
+| Shopping Bag | ![desktop shopping bag](document_assets/images/finished_shopping_bag_desktop.png) | ![mobile shopping bag](document_assets/images/finished_shopping_bag_mob.png) |
+| Checkout |![desktop checkout](document_assets/images/finished_checkout_desktop.png) | ![mobile checkout]() |
+| Order Summary | ![desktop order summary](document_assets/images/finished_checkout_success_desktop.png) | ![mobile order summary](document_assets/images/finished_checkout_success_mob.png) | 
+| Sign In | ![desktop sign in](document_assets/images/finished_signin_desktop.png) | ![mobile sign in](document_assets/images/finished_signin_mob.png) |
+| Sign Up | ![desktop sign up](document_assets/images/finished_sign_up_desktop.png)  | ![mobile sign up](document_assets/images/finished_sign_up_mob.png)|
+|Sign Out | ![desktop sign out](document_assets/images/finished_signout_desktop.png) | ![mobile sign out](document_assets/images/finished_signout_mob.png)|
+| User Profile | ![desktop user profile](document_assets/images/finished_profile_desktop.png) | ![mobile user profile](document_assets/images/finished_user_profile_mob.png) |
+| User Favourites | ![desktop favourites](document_assets/images/finished_favourites_desktop.png) | ![mobile favourites](document_assets/images/finished_favourites_mob.png) |
+| Product Management | ![desktop product management](document_assets/images/finished_product_management_desktop.png)|  ![mobile product management](document_assets/images/finished_product_management_mob.png) |
