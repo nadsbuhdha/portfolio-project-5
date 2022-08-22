@@ -40,7 +40,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 class Favourites(models.Model):
     """
-    A model that keeps track of users wish list items.
+    A model that keeps track of favourite  items.
     """
     user = models.OneToOneField(
         User,

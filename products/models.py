@@ -39,6 +39,7 @@ GENDER = (
 
 
 class Product(models.Model):
+    """ The product model """
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -58,6 +59,7 @@ class Product(models.Model):
 
 
 class Review(models.Model):
+    """ The review model """
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
     review_body = models.TextField()

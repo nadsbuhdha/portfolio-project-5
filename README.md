@@ -234,6 +234,153 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
+### Line Item Model
+
+class OrderLineItem(models.Model):
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name = 'lineitems')
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    product_size = models.CharField(max_length=2, null=True, blank=True)
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable = False)
+
+    def save(self, *args, **kwargs):
+        """
+        Orverride the original save method to set the lineitem total
+        and update the order total
+        """
+        self.lineitem_total = self.product.price * self.quantity
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'SKU {self.product.sku} on order {self.order.order_number}'
+
+
+### Newsletter Model
+
+class Newsletter(models.Model):
+    """ A model for users to subscribe to a newsletter """
+
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email
+
+
+### Category Model
+
+class Category(models.Model):
+    """
+    The Category model class & friendly name
+    """
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
+
+### Brand Model
+
+class Brand(models.Model):
+    """
+    Brand Class
+    """
+    name = models.CharField(max_length=200)
+    
+    friendly_name = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
+
+### Product Model
+
+class Product(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)
+    gender = models.CharField(choices=GENDER, max_length=10,default='u')
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+    
+
+    def __str__(self):
+        return self.name
+
+
+### Review Model 
+class Review(models.Model):
+    """ The review model """
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
+    review_body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering =['created_on']
+    
+    def __str__(self):
+        return f"Review {self.review_body} by {self.user}  "
+
+### User Profile Model
+
+class UserProfile(models.Model):
+    """
+    A user profile model for maintaining default
+    delivery information and order history
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
+    default_country = CountryField(blank_label='Country', null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
+    default_street_address_1 = models.CharField(max_length=80, null=True, blank=True)
+    default_street_address_2 = models.CharField(max_length=80, null=True, blank=True)
+    default_county = models.CharField(max_length=80, null=True, blank=True)
+
+    def __str__(self):
+        return self.user.username
+
+
+
+@receiver(post_save, sender=User)
+def create_or_update_user_profile(sender, instance, created, **kwargs):
+    """
+    Create or update the user profile
+    """
+    if created:
+        UserProfile.objects.create(user=instance)
+    # Existing users: just save the profile
+    instance.userprofile.save()
+
+### Favourites Model 
+
+class Favourites(models.Model):
+    """
+    A model that keeps track of users favourite items.
+    """
+    user = models.OneToOneField(
+        User,
+        on_delete=models.CASCADE
+    )
+    product = models.ManyToManyField(
+        Product,
+        blank=True
+    )
+
 
 
 ## Design 
