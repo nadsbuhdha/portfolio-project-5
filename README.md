@@ -760,6 +760,55 @@ A custom 404 page is utilised. Users can click the 'return home' button to retur
 | Accessibility  | Is the add product page only available to superusers ? | PASS |
 | Responsiveness  | Are all the elements on the product details page responsive, displaying coherently on desktop, tablet and mobile views? | PASS | 
 
+### Validation 
+
+W3C Validator was used to check for error within my HTML code.
+
+The final check presented error free HTML
+
+#### Home Page
+![Home page](document_assets/images/homepage_validation.png)
+
+#### All Products 
+![All Products](document_assets/images/all_products_validation.png)
+
+#### Product Details 
+![All Products](document_assets/images/product_details_validation.png)
+
+#### Checkout  
+
+![All Products](document_assets/images/checkout_validation.png)
+
+#### Checkout Success 
+![All Products](document_assets/images/checkout_success_validation.png)
+
+#### My Profile 
+
+![My Profile](document_assets/images/my_profile_validation.png)
+
+#### Sign In 
+
+![Sign In](document_assets/images/sign_in_validation.png)
+
+
+#### Sign Out 
+
+![Sign In](document_assets/images/sign_out_validation.png)
+
+#### Register 
+![Register](document_assets/images/register_validation.png)
+
+
+### validation errors 
+
+Due to the nature of django and the use of 'includes' errors were shown on specific pages.
+These errors have no impact on the overall website and are also within the bouqiue ado project. 
+
+#### Bag Page
+
+![Bag Page](document_assets/images/bag_page_validation.png)
+
+![Bag Page](document_assets/images/add_product_page.png)
 
 ## Deployment 
 
