@@ -101,7 +101,7 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -160,8 +160,8 @@
                 <p class="small">Sign Up For Our Newsletter</p>
                 <form class="newsletter-form" action="{% url 'newsletter' %}" method="POST">
                     {% csrf_token %}
-                    <div class="input-group mb-3">
-                        <input class="form-control" type="email" name="email"  placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group mb-3" id="newsletter">
+                        <input class="form-control" type="email" name="email"  placeholder="Enter your email address" aria-label="Recipient's email" aria-describedby="newsletter">
                         <button class="btn" id="subscribe-button" type="submit">
                             <i class="fas fa-paper-plane text-white"></i>
                         </button>
