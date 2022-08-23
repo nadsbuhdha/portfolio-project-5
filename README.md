@@ -974,7 +974,7 @@ from storages.backends.s3boto3 import S3Boto3Storage
 | Product Details | ![desktop product detail](document_assets/images/finished_product_detail_desktop.png)|  ![mobile product detail](document_assets/images/finished_review_mob.png)|
 | Product Review | ![desktop review ](document_assets/images/finished_review_desktop.png)|  ![mobile product review](document_assets/images/finished_product_detail_mob.png)|
 | Shopping Bag | ![desktop shopping bag](document_assets/images/finished_shopping_bag_desktop.png) | ![mobile shopping bag](document_assets/images/finished_shopping_bag_mob.png) |
-| Checkout |![desktop checkout](document_assets/images/finished_checkout_desktop.png) | ![mobile checkout]() |
+| Checkout |![desktop checkout](document_assets/images/finished_checkout_desktop.png) | ![mobile checkout](document_assets/images/finished_checkout_mob.png) |
 | Order Summary | ![desktop order summary](document_assets/images/finished_checkout_success_desktop.png) | ![mobile order summary](document_assets/images/finished_checkout_success_mob.png) | 
 | Sign In | ![desktop sign in](document_assets/images/finished_signin_desktop.png) | ![mobile sign in](document_assets/images/finished_signin_mob.png) |
 | Sign Up | ![desktop sign up](document_assets/images/finished_sign_up_desktop.png)  | ![mobile sign up](document_assets/images/finished_sign_up_mob.png)|
