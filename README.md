@@ -810,6 +810,17 @@ These errors have no impact on the overall website and are also within the bouqi
 
 ![Bag Page](document_assets/images/add_product_page.png)
 
+
+### CSS Validation 
+
+base.css validation
+![base css](document_assets/images/validation_base_css.png)
+
+checkout.css validation
+![checkout css](document_assets/images/validation_checkout_css.png)
+
+profile.css validation
+![profile css](document_assets/images/validation_profile_css.png)
 ## Deployment 
 
 Gitpod workspace was used to develop this project, utilising the code institute template. The project was committed and pushed to github. The final project is deployed on Heroku. Static and media files are stored AWS S3. 
