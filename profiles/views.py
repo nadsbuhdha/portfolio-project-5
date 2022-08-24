@@ -66,28 +66,11 @@ def order_history(request, order_number):
     return render(request, template, context)
 
 
-# @login_required
-# def add_to_favourites(request, product_id):
-#     product = get_object_or_404(Product, pk=product_id)
-#     favourites = get_object_or_404(Favourites, user=request.user)
-#     if product.favourites.filter(id=request.user.id).exists():
-#         product.favourites.remove(request.user)
-#         messages.success(request, product.name + " has been removed from your WishList")
-#     else:
-#         product.favourites.add(request.user)
-#         messages.success(request, "Added " + product.name + " to your WishList")
-#     return redirect(reverse('product', args=[product_id]))
-    
 
 @login_required
 def add_to_favourites(request, product_id):
     """
-    Adds the product to the users Wishlist.
-    Args:
-        request (the request object)
-        product_id (the product in question)
-    Returns:
-        the MyStepUp profile page
+    Adds the product to the users profiles.
     """
     product = get_object_or_404(Product, pk=product_id)
     try:

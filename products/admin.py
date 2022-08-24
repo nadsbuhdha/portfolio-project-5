@@ -1,10 +1,12 @@
+""" products admin """
+
 from django.contrib import admin
 from .models import Product, Category, Brand, Review
 # Register your models here.
 
 
-
 class ProductAdmin(admin.ModelAdmin):
+    """ products admin """
     list_display = (
         'sku',
         'name',
@@ -17,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """ category admin """
     list_display = (
         'friendly_name',
         'name'
@@ -24,6 +27,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class BrandAdmin(admin.ModelAdmin):
+    """ brand admin """
     list_display = (
         'friendly_name',
         'name'
@@ -31,14 +35,13 @@ class BrandAdmin(admin.ModelAdmin):
 
 
 class ReviewAdmin(admin.ModelAdmin):
+    """ review admin """
     list_display = (
         'user',
         'product',
         'review_body',
         'created_on',
     )
-
-
 
 
 admin.site.register(Review, ReviewAdmin)

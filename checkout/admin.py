@@ -1,18 +1,19 @@
+""" Checkout Admin """
+
 from django.contrib import admin
 from .models import Order, OrderLineItem
 # Register your models here.
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """ Line Item Admin  """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
-
 class OrderAdmin(admin.ModelAdmin):
-
+    """ Order Admin """
     inlines = (OrderLineItemAdminInline,)
-    
     readonly_fields = (
         'order_number',
         'date',
@@ -20,9 +21,8 @@ class OrderAdmin(admin.ModelAdmin):
         'order_total',
         'grand_total',
         'original_bag',
-         'stripe_pid',
+        'stripe_pid',
     )
-
 
     fields = (
         'order_number',
@@ -44,7 +44,6 @@ class OrderAdmin(admin.ModelAdmin):
         'stripe_pid',
     )
 
-    
     list_display = (
         'order_number',
         'date',

@@ -1,9 +1,13 @@
+""" bag context """
+
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
-def bag_contents(request): 
+
+def bag_contents(request):
+    """ bag context contents """
 
     bag_items = []
     total = 0
@@ -24,7 +28,7 @@ def bag_contents(request):
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
                 total += quantity * product.price
-                product_count += quantity 
+                product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
                     'quantity': quantity,
@@ -38,7 +42,7 @@ def bag_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
 
     context = {

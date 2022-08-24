@@ -1,4 +1,7 @@
+""" newsletter model """
+
 from django.db import models
+
 
 class Newsletter(models.Model):
     """ A model for users to subscribe to a newsletter """

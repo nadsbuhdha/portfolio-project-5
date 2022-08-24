@@ -1,13 +1,16 @@
-from django.shortcuts import render, redirect, get_object_or_404, reverse, HttpResponse
+""" bag views """
+
+from django.shortcuts import render, redirect, get_object_or_404, \
+    reverse, HttpResponse
 from django.contrib import messages
 from products.models import Product
+
 
 def view_bag(request):
     """
     A view that renders the bag page:
     """
     return render(request, 'bag/bag.html')
-
 
 
 def add_to_bag(request, item_id):
@@ -26,26 +29,27 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
+                messages.success(request, f'Updated size {size} {product.name} \
+                     quantity to {bag[item_id]["items_by_size"][size]}')
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size {size} {product.name} to your bag')
-                
+                messages.success(request, f'Added size {size} {product.name} \
+                     to your bag')
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size} {product.name} to your bag')
-            
+            messages.success(request, f'Added size {size} {product.name} \
+                 to your bag')
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to \
+                 {bag[item_id]}')
         else:
             bag[item_id] = quantity
             messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
-
 
 
 def adjust_bag(request, item_id):
@@ -60,12 +64,14 @@ def adjust_bag(request, item_id):
     if size:
         if quantity > 0:
             bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
+            messages.success(request, f'Updated size {size} {product.name} \
+                 quantity to {bag[item_id]["items_by_size"][size]}')
         else:
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed size {size} {product.name} from your bag')
+            messages.success(request, f'Removed size {size} {product.name} \
+                 from your bag')
     else:
         if quantity > 0:
             bag[item_id] = quantity

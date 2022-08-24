@@ -1,10 +1,13 @@
+""" homepage views """
+
 from django.shortcuts import render, redirect, reverse
 from django.views.generic import TemplateView
-from .models import Newsletter
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from .models import Newsletter
 from .forms import NewsletterForm
 # Create your views here.
+
 
 class HomeView(TemplateView):
     """
@@ -12,7 +15,6 @@ class HomeView(TemplateView):
     """
 
     template_name = 'home/index.html'
-
 
 
 def newsletter_signup(request):
@@ -38,7 +40,6 @@ def newsletter_signup(request):
     }
 
     return render(request, 'home/newsletter.html', context)
-
 
 
 def newsletter_unsub(request):
@@ -67,7 +68,6 @@ def newsletter_unsub(request):
     return render(request, 'home/newsletter_unsub.html', context)
 
 
-
-
 def error_handle_404(request, exception):
+    """ 404 handler """
     return render(request, '404.html')

@@ -1,3 +1,5 @@
+""" bag urls """
+
 from django.urls import path
 
 # Internal:
