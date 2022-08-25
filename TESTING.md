@@ -1,3 +1,6 @@
+The site has been thoroughly tested throughout
+
+
 #### Navagation
 | Feature       | Test          | Outcome |
 | ------------- |:-------------:| -----:|
@@ -180,3 +183,80 @@ checkout.css validation
 
 profile.css validation
 ![profile css](document_assets/images/validation_profile_css.png)
+
+### Python Testing 
+
+asgi validation 
+![asgi validation](document_assets/images/validation_asgi.png)
+bagg app validation
+![bag app validation](document_assets/images/validation_bag_app.png)
+bagg app context validation
+![bag app context validation](document_assets/images/validation_bag_context.png)
+bag app urls validation
+![bag app urls validation](document_assets/images/validation_bag_urls.png)
+bag app views validation
+![bag app views validation](document_assets/images/validation_bag_views.png)
+checkout admin validation
+![checkout admin  validation](document_assets/images/validation_checkout_admin.png)
+checkout app validation 
+![checkout app admin validation](document_assets/images/validation_checkout_app.png)
+checkout forms validation
+![checkout app forms validation](document_assets/images/validation_checkout_forms.png)
+checkout models validation
+![checkout app models validation](document_assets/images/validation_checkout_models.png)
+checkout signals
+![checkout app signals validation](document_assets/images/validation_checkout_signals.png)
+checkout urls validation 
+![checkout app urls validation](document_assets/images/validation_checkout_urls.png)
+checkout views validation
+![checkout app views validation](document_assets/images/validation_checkout_views.png)
+checkout webhook handler validation
+![checkout app webhook handler validation](document_assets/images/validation_checkout_webhook.png)
+checkout webhook validation
+![checkout app webhook validation](document_assets/images/validation_checkout_webhook.png)
+custom storages validation
+![custom storages validation](document_assets/images/validation_custom_storages.png)
+home page admin validation
+![home page admin validation](document_assets/images/validation_home_admin.png)
+home page app validation
+![home page app validation](document_assets/images/validation_home_app.png)
+home page forms validation
+![home page forms validation](document_assets/images/validation_home_forms.png)
+home page model validation
+![home page model validation](document_assets/images/validation_home_newsletter_model.png)
+home page urls validation
+![home page urls validation](document_assets/images/validation_home_urls.png)
+home page views validation
+![home page views validation](document_assets/images/validation_homepage_views.png)
+main urls validation
+![main urls validation](document_assets/images/validation_main_urls.png)
+manage py validation
+![manage py validation](document_assets/images/validation_managepy.png)
+product models validation
+![product models validation](document_assets/images/validation_product_models.png)
+product urls validation
+![product urls validation](document_assets/images/validation_product_urls.png)
+product admin validation
+![product admin validation](document_assets/images/validation_products_admin.png)
+product app validation
+![product app validation](document_assets/images/validation_products_app.png)
+product form validation
+![product form validation](document_assets/images/validation_products_forms.png)
+product views validation
+![product views validation](document_assets/images/validation_products_views.png)
+product widgets validation
+![product widgets validation](document_assets/images/validation_products_widgets.png)
+profile form validation
+![profile form validation](document_assets/images/validation_profile_forms.png)
+profile models validation
+![profile models validation](document_assets/images/validation_profile_models.png)
+profile views validation
+![profile views validation](document_assets/images/validation_profile_views.png)
+profile admin validation
+![profile admin validation](document_assets/images/validation_profiles_admin.png)
+profile app validation
+![profile app validation](document_assets/images/validation_profiles_app.png)
+profile urls validation
+![profile urls validation](document_assets/images/validation_profiles_urls.png)
+profile wisgi validation
+![profile wisgi validation](document_assets/images/validation_wisgi.png)
