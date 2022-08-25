@@ -260,3 +260,16 @@ profile urls validation
 ![profile urls validation](document_assets/images/validation_profiles_urls.png)
 profile wisgi validation
 ![profile wisgi validation](document_assets/images/validation_wisgi.png)
+
+### Javascript Validation
+
+add product javascript validation 
+![add product page js validation](document_assets/images/js_addproduct_validation.png)
+edit product javascript validation 
+![edit product page js validation](document_assets/images/js_editproduct_validation.png)
+base javascript validation 
+![base page js validation](document_assets/images/js_base_validation.png)
+countryfield javascipt validation 
+![countryfield js validation](document_assets/images/js_countryfield_validation.png)
+product page javascript validation
+![product page javascript validation](document_assets/images/js_product_validation.png)
