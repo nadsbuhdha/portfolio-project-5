@@ -273,3 +273,20 @@ countryfield javascipt validation
 ![countryfield js validation](document_assets/images/js_countryfield_validation.png)
 product page javascript validation
 ![product page javascript validation](document_assets/images/js_product_validation.png)
+
+
+### Lighthouse 
+
+| Page        | Desktop  | Mobile   |
+| ------------- |:-------------:| -----:|
+| Home page | ![Home Page](document_assets/images/lighthouse_login_desktop.png) |![Home Page](document_assets/images/lighthouse_homepage_mob.png)|
+| Products page | ![Products Page](document_assets/images/lighthouse_products_desktop.png) |![Products Page](document_assets/images/lighthouse_product_detail_mob.png)|
+| Products Details page | ![Products details Page](document_assets/images/lighthouse_product_detail_desktop.png) |![Products details Page](document_assets/images/lighthouse_product_detail_mob.png)|
+| Checkout Page | ![checkout Page](document_assets/images/lighthouse_checkout_desktop.png) |![checkout Page](document_assets/images/lighthouse_checkout_mob.png)|
+| Checkout Success | ![checkout success Page](document_assets/images/lighthouse_checkoutsuccess_desktop.png) |![checkout Page](document_assets/images/lighthouse_checkoutsuccess_desktop.png)|
+| My Profile | ![My ProfilePage](document_assets/images/lighthouse_myprofile_desktop.png) |![My Profile](document_assets/images/lighthouse_myprofile_mob.png)|
+| Product management | ![Product management](document_assets/images/lighthouse_add_product.png) |![Product management](document_assets/images/lighthouse_addproducts_mob.png)|
+| Product management | ![Product management](document_assets/images/lighthouse_add_product.png) |![Product management](document_assets/images/lighthouse_addproducts_mob.png)|
+| Sign In | ![Sign In](document_assets/images/lighthouse_login_desktop.png) |![Sign In](document_assets/images/lighthouse_login_mob.png)|
+| Sign Out | ![Sign Out](document_assets/images/lighthouse_login_desktop.png) |![Sign Out](document_assets/images/lighthouse_logout_mob.png)|
+| Register | ![Register](document_assets/images/lighthouse_register_desktop.png) |![Register](document_assets/images/lighthouse_register_mob.png)|
