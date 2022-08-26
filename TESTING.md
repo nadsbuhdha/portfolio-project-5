@@ -282,6 +282,7 @@ product page javascript validation
 | Home page | ![Home Page](document_assets/images/lighthouse_login_desktop.png) |![Home Page](document_assets/images/lighthouse_homepage_mob.png)|
 | Products page | ![Products Page](document_assets/images/lighthouse_products_desktop.png) |![Products Page](document_assets/images/lighthouse_product_detail_mob.png)|
 | Products Details page | ![Products details Page](document_assets/images/lighthouse_product_detail_desktop.png) |![Products details Page](document_assets/images/lighthouse_product_detail_mob.png)|
+| Bag Page | ![Bag Page](document_assets/images/lighthouse_bag_desktop.png) |![Bag Page Page](document_assets/images/lighthouse_bag_mob.png)|
 | Checkout Page | ![checkout Page](document_assets/images/lighthouse_checkout_desktop.png) |![checkout Page](document_assets/images/lighthouse_checkout_mob.png)|
 | Checkout Success | ![checkout success Page](document_assets/images/lighthouse_checkoutsuccess_desktop.png) |![checkout Page](document_assets/images/lighthouse_checkoutsuccess_desktop.png)|
 | My Profile | ![My ProfilePage](document_assets/images/lighthouse_myprofile_desktop.png) |![My Profile](document_assets/images/lighthouse_myprofile_mob.png)|

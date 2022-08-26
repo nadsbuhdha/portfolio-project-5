@@ -1,5 +1,8 @@
 # Sole Society 
 
+![solesociety](document_assets/images/amiresponsive.png)
+
+
 Sole Society is an ecommerce website focusing on sneakers.
 
 Sole Society provides users will the ability to purchase exclusive sneakers. Authenticated users can utilise the review and favourite features whilst store owners can access the CRUD functionality by adding editing publishing and deleting products to sell. 
@@ -14,11 +17,23 @@ A live version of the site is available [here](https://sole-society.herokuapp.co
 
 ### Strategy 
 
-The purpose of this website was to provide users with an ecommerce store where they can purcahse sneakers. Agile methodologies were utilised in order to create the website. 
+The purpose of this website was to provide users with an ecommerce store where they can purchase sneakers. Agile methodologies were utilised in order to create the website. 
 
 #### Project Goals
 
 ### User Stories 
+
+Throughout the project,  GitHub projects was utilised to track user stories in order to manage the project. When a user story was being focused on, it would be moved from the 'To Do' section to the 'In Progress' section. Once finished it would be moved to the 'Done' section. At the end of the project, any user stories which were not incorporated were moved to the 'Won't Have' section.
+
+
+Initial user story project board
+![start projectboard](document_assets/images/userstories_start.png)
+
+In Progress projectboard board
+![mid projectboard](document_assets/images/userstoriesmid.png)
+
+Finalised projectboard board
+![end projectboard](document_assets/images/userstories_finish.png)
 
 ### Epic 1 - Site Foundations 
 
@@ -31,7 +46,7 @@ The purpose of this website was to provide users with an ecommerce store where t
 
 * As a site user I can see an overview of the product details whilst in list view so that I am aware of the product details before clicking on the product
 
-* As a site user I can view individual product details so that I can see more in depth details of products
+* As a site user I can view individual product details so that I can see more in-depth details of products
 
 * As a site user I can sort products by rating, gender or brand so that I can filter products to easily find a product I am searching for
 
@@ -55,7 +70,7 @@ The purpose of this website was to provide users with an ecommerce store where t
 
 * As a site user I can see an overview of my bag so that I can confirm I am happy with purchases before payment
 
-* As a site user I can  enter my payment details** so that I can purchase my items with relative ease.
+* As a site user I can enter my payment details** so that I can purchase my items with relative ease.
 
 * As a guest user I can enter my details without having to sign in** so that I can still make a purchase as a guest
 *  As a logged in user my details are automatically entered so that I can avoid repetitive actions
@@ -64,7 +79,7 @@ The purpose of this website was to provide users with an ecommerce store where t
 
 ### Epic 5 - Account registration 
 
-* As a user I can sign up to become a registered account user so that I can access the sites registered users functions
+* As a user I can sign up to become a registered account user so that I can access the sites registered users' functions
 
 * As a registered user I can store my details so that I do not have to continually enter my details such as shipping
 
@@ -78,20 +93,20 @@ The purpose of this website was to provide users with an ecommerce store where t
 
 * As a registered user I can write reviews for products so that I can share my opinion on the products purchased
 
-* As a registered user I can delete a review so that  it can be removed if I no longer want it to be displayed
+* As a registered user I can delete a review so that it can be removed if I no longer want it to be displayed
 
 ### Epic 7 - Store Owner 
 
 * As a store owner I can add a product so that I can sell my product online
 
-* As a store owner I can ** edit a product so that I can edit product details
+* As a store owner I can edit a product so that I can edit product details
 
 * As a store owner I can I can delete a product so that I can remove the product from sales
 
 
 ### Strategy Table 
 
-In order to create a site which is relevant to its target auidence, various other related website were researched first in order to comprehensively analyse the features which would be necessary.
+In order to create a site which is relevant to its target audience, various other related website were researched first in order to comprehensively analyse the features which would be necessary.
 
 | Feature        | Importance  | Viability  |
 | ------------- |:-------------:| -----:|
@@ -117,7 +132,7 @@ In order to create a site which is relevant to its target auidence, various othe
 
 ### Scope
 
-The project was developed in mulitple phases in order to build a minimum viable product. This product could then be developed and extended on. 
+The project was developed in multiple phases in order to build a minimum viable product. This product could then be developed and extended on. 
 
 ### Phase 1 
 
@@ -127,11 +142,11 @@ The project was developed in mulitple phases in order to build a minimum viable 
 * Product Sort
 * Product Search
 * Shopping Bag Overview
-* Bag update notifcation
+* Bag update notification
 * Payment system
 * Alter quantities of product in bag
 * Order Summary in checkout
-* Display purcahse total 
+* Display purchase total 
 * Feedback that order is complete
 * User Registration
 * Create, Update, Delete products for superuser
@@ -156,12 +171,10 @@ This allowed the project to focus on particular specific tasks whilst being buil
 
 ## Structure 
 
-It is imperative that users can naviagate through the site easily and instinctively. In order to adhere to this the following considerations undertaken:
-
-(Add structure image ?)
+It is imperative that users can navigate through the site easily and instinctively. In order to adhere to this the following considerations undertaken:
 
 * Responsive design throughout the site. 
-* Header, footer and navagation visable and consistant throughout entire site. 
+* Header, footer and navigation visable and consistant throughout entire site. 
 * Clearly labelled links.
 * Consistant font sizing and colouring throughout site. 
 
@@ -416,7 +429,7 @@ During the design phase of building the site, various sneaker focuesed ecommerec
 
 ### Fonts 
 
-Nunito was used as the primary font across the site. After research into ecommerece fonts, Nunito was chosen for its well-balanced appearance and rounded asaesthetic, which compliments the rounded border radius which features across the site. San-serif was chosen as a backup font, should Nunito fail. 
+Nunito was used as the primary font across the site. After research into ecommerce fonts, Nunito was chosen for its well-balanced appearance and rounded asaesthetic, which compliments the rounded border radius which features across the site. San-serif was chosen as a backup font, should Nunito fail. 
 
 ## Marketing
 
@@ -439,7 +452,7 @@ A variety of benefits are acquired with a Facebook marketing page including:
 * Driving traffic to the sole society website through Facebook links
 * Targeted advertising which can be adhered to specific demographics
 * Customer interaction through posted links generating communication between business and consumer
-The live Facebook Business page can be viewed (here ** add)  
+The live Facebook Business page can be viewed (here)[https://www.facebook.com/profile.php?id=100084853331729]  
 
 ### Facebook 
 
@@ -469,10 +482,10 @@ The selected keywords are:
 
 * The entire website has been designed with a responsive mobile first approach.
 
-The Header of the site features the site logo which links back to the homepage. The navigation links allow the shopper to navagate and access differening sections across the website.
+The Header of the site features the site logo which links back to the homepage. The navigation links allow the shopper to navigate  and access differing sections across the website.
 ![header](document_assets/images/ss_header.png)
 
-The header features a dropdown menu where users can navagate to products filtered by the specific category they pick. 
+The header features a dropdown menu where users can navigate  to products filtered by the specific category they pick. 
 ![drop down menu](document_assets/images/dropdownmenu.png)
 
 When a user send an item to the bag, the bag on the header highlights and displays current bag price.
@@ -481,15 +494,15 @@ When a user send an item to the bag, the bag on the header highlights and displa
 Users can search for specific products with the use of the searchbar. 
 ![search bar](document_assets/images/searchbar.png)
 
-The homepage features a carousel of product images. The carousel features a button where users can navagate to all products.
+The homepage features a carousel of product images. The carousel features a button where users can navigate to all products.
 ![carousel](document_assets/images/caroulsel.png)
 
-The footer features on each page. Social media icons feautre on the footer, including the facebook page. Users can also sign up to the newsletter. 
+The footer features on each page. Social media icons feature on the footer, including the facebook page. Users can also sign up to the newsletter. 
 ![footer](document_assets/images/footer.png)
 
 ### Products Page 
 
-The products page features all of the stores products in individual cards. Products can be filtered by Mens, Womens, Accessories & special offers. Products can be futher filtered by best sellers, exlusives, new arrivals, sport shoes and essentials. 
+The products page features all of the stores products in individual cards. Products can be filtered by Mens, Womens, Accessories & special offers. Products can be futher filtered by best sellers, exclusives, new arrivals, sport shoes and essentials. 
 Products can also be sorted by price, rating, name, category and brand. 
 ![products page](document_assets/images/products_page.png)
 
@@ -499,7 +512,7 @@ The product card features the name of the product, the brand, the price,  rating
 
 ### Product detail
 
-The product detail page features The name of the product, a larger version of the product image, the the product brand, the price, the product rating and a short description of the product.
+The product detail page features The name of the product, a larger version of the product image, the  product brand, the price, the product rating and a short description of the product.
 Users can favourite the product from here. 
 User can select the size and quantity of the product from this page. 
 Once size and quantity users can either add the product to the bag or continue to shop. 
@@ -522,7 +535,7 @@ When a user has products in their bag, the product image, name, sku, price and q
 
 ### Checkout Page
 
-The checkout page features an overview of the products the user is intending to purcahse. 
+The checkout page features an overview of the products the user is intending to purchase. 
 A form is present for the user to fill out in order to complete the purchase.
 Included in the form is a section for users to input their card details. This is connected to stripe payments system. 
 Under the payment form, a message is displayed informing the shopper the amount to be charged on the provided card.
@@ -576,10 +589,13 @@ Users can only leave one review per product.
 
 ### 404 Page
 
-** add image **
+
 A custom 404 page is utilised. Users can click the 'return home' button to return to the home page.
 
+![404](document_assets/images/errorpage.png)
+
 ## Technologies Used
+
 
 ### Languages 
 * HTML5
@@ -639,6 +655,19 @@ A custom 404 page is utilised. Users can click the 'return home' button to retur
 ## Testing 
 
 [testing](TESTING.md)
+
+
+## Bugs
+
+When validating pages through lighthouse, the robots txt file was shown as not valid. 
+In order to solve this bug, a copy of the robots.txt file was copied into the templates folder.
+Then in the main urls.py I added: 
+file path("robots.txt",TemplateView.as_view(template_name="./robots.txt", content_type="text/plain")), was added. This solved the bug and allowed the robots file to be crawled. 
+[robots error](document_assets/images/robotsbug.png)
+
+
+When setting up the payment webhook, the payments failed. This was due to the wh secret key not connecting. Once connected correctly, the webhook succeeded. 
+[Failed Payment ](document_assets/images/payment_failed.png)
 
 
 ### Forking The Repository
@@ -857,3 +886,10 @@ from storages.backends.s3boto3 import S3Boto3Storage
 | User Profile | ![desktop user profile](document_assets/images/finished_profile_desktop.png) | ![mobile user profile](document_assets/images/finished_user_profile_mob.png) |
 | User Favourites | ![desktop favourites](document_assets/images/finished_favourites_desktop.png) | ![mobile favourites](document_assets/images/finished_favourites_mob.png) |
 | Product Management | ![desktop product management](document_assets/images/finished_product_management_desktop.png)|  ![mobile product management](document_assets/images/finished_product_management_mob.png) |
+
+
+## Credits 
+* The Code Institute's Boutique Ado project was used as the main reference point for this project. 
+* The product descriptions and images came from https://www.flightclub.com/
+* The carousel images came from https://www.pexels.com/ 
+* To build the favourite section this tutorial was used https://www.youtube.com/watch?v=OgA0TTKAtqQ&t=1829s
