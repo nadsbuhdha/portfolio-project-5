@@ -259,7 +259,7 @@ Final Database Model:
 ```
 
 
-### Line Item Model
+### Line Item Model 
 ```
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name = 'lineitems')
@@ -761,7 +761,7 @@ Heroku Deployment
 *   In settings.py and ensure the secret key is called from the enviroment using SECRET_KEY = os.environ.get('SECRET_KEY', '')
 *   In settings.py set DEBUG = 'DEVELOPMENT' in os.environ
 
-## Amaon Web Service 
+### Amazon Web Service
 
 AWS was used in order to store static and media files. 
 
