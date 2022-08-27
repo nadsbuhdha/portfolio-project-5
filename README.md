@@ -10,19 +10,19 @@ Sole Society provides users will the ability to purchase exclusive sneakers. Aut
 A live version of the site is available [here](https://sole-society.herokuapp.com/)
 
 ## Table Of Contents 
-[UX](#ux)
-[User Stories](#user-stories)
-[Stucture](#structure)
-[Database Model](#database-model)
-[Design](#design)
-[Marketing](#marketing)
-[Features](#features)
-[Technology Used](#technologies-used)
-[Testing](#testing)
-[Bugs](#bugs)
-[Deployment](#deployment)
-[Finished Product](#finished-product)
-[Credits](#credits)
+1. [UX](#ux)
+2. [User Stories](#user-stories)
+3. [Stucture](#structure)
+4. [Database Model](#database-model)
+5. [Design](#design)
+6. [Marketing](#marketing)
+7. [Features](#features)
+8. [Technology Used](#technologies-used)
+9. [Testing](#testing)
+10. [Bugs](#bugs)
+11. [Deployment](#deployment)
+12. [Finished Product](#finished-product)
+13. [Credits](#credits)
 
 
 ### Strategy 
@@ -255,11 +255,12 @@ Final Database Model:
 
         
     def __str__(self):
-        return self.order_number ```
+        return self.order_number 
+```
 
 
 ### Line Item Model
-
+```
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name = 'lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
@@ -277,10 +278,10 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
-
+```
 
 ### Newsletter Model
-
+```
 class Newsletter(models.Model):
     """ A model for users to subscribe to a newsletter """
 
@@ -289,10 +290,10 @@ class Newsletter(models.Model):
 
     def __str__(self):
         return self.email
-
+```
 
 ### Category Model
-
+```
 class Category(models.Model):
     """
     The Category model class & friendly name
@@ -309,10 +310,10 @@ class Category(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
-
+```
 
 ### Brand Model
-
+```
 class Brand(models.Model):
     """
     Brand Class
@@ -323,10 +324,10 @@ class Brand(models.Model):
 
     def __str__(self):
         return self.name
-
+```
 
 ### Product Model
-
+```
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
@@ -343,9 +344,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
+```
 
 ### Review Model 
+```
 class Review(models.Model):
     """ The review model """
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
@@ -358,9 +360,9 @@ class Review(models.Model):
     
     def __str__(self):
         return f"Review {self.review_body} by {self.user}  "
-
+```
 ### User Profile Model
-
+```
 class UserProfile(models.Model):
     """
     A user profile model for maintaining default
@@ -389,9 +391,9 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
-
+```
 ### Favourites Model 
-
+```
 class Favourites(models.Model):
     """
     A model that keeps track of users favourite items.
@@ -404,7 +406,7 @@ class Favourites(models.Model):
         Product,
         blank=True
     )
-
+```
 
 
 ## Design 
@@ -720,10 +722,12 @@ Heroku Deployment
     dj_database_url & pip3 install psycopg2-binary
 *   Ensure Heroku installs the apps requirements by using the pip3 freeze > requirements.txt command 
 *   In settings.py import dj_database_url
-*   Still in settings.py remove the default database and replace with :  
+*   Still in settings.py remove the default database and replace with : 
+``` 
         DATABASES = {
         'default': dj_database_url.parse('YOUR_DATABASE_URL_FROM_HEROKU')
         }
+```
 *   Migrate changes with python3 manage.py migrate
 *   As this is a new database, the data needs adding to the new database, do this by using the
     command "./manage.py loaddata db.json" in the terminal.
@@ -731,6 +735,7 @@ Heroku Deployment
 *   In settings.py remove the datebase and replace with an if statement so that it connects 
     postgres in Heroku and sqlite in version control 
 *   if 'DATABASE_URL' in os.environ:
+```
         DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
@@ -741,6 +746,7 @@ Heroku Deployment
                 'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+```
 
 
 *   Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the        Django app. Use freeze > requirements.txt to add this to the requirements. 
@@ -782,6 +788,7 @@ AWS was used in order to store static and media files.
 
 
 * On the permissions tab, navagate to the CORS section and input the following code:
+```
 [
   {
       "AllowedHeaders": [
@@ -796,7 +803,7 @@ AWS was used in order to store static and media files.
       "ExposeHeaders": []
   }
 ]
-
+```
 
 * On the buckets policy, still within the permissions tab, Select Type of Policy: choose S3 Bucket Policy. Then, Effect: choose Allow Principal: *, Actions: select GetObject, 
 Complete the (ARN), from the Bucket ARN back in the Bucket Policy. Click Add statement Than Click Generate Policy and copy the policy into bucket policy editor. 
@@ -831,7 +838,7 @@ Complete the (ARN), from the Bucket ARN back in the Bucket Policy. Click Add sta
 
 * In settings.py add 
 if 'USE_AWS' in os.environ:
-
+```
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
@@ -854,7 +861,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
+```
 
 * In Heroku set the config variables using the variables from the csv file. 
 
@@ -865,7 +872,7 @@ if 'USE_AWS' in os.environ:
 * Inside add: 
 from django.conf import settings
 from storages.backends.s3boto3 import S3Boto3Storage
-
+```
 
     class StaticStorage(S3Boto3Storage):
     location = settings.STATICFILES_LOCATION
@@ -873,7 +880,7 @@ from storages.backends.s3boto3 import S3Boto3Storage
 
     class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION
-
+```
 * Back in AWS create a folder named 'media'.
 
 * Upload media to this folder. 
