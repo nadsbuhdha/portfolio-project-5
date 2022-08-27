@@ -10,9 +10,19 @@ Sole Society provides users will the ability to purchase exclusive sneakers. Aut
 A live version of the site is available [here](https://sole-society.herokuapp.com/)
 
 ## Table Of Contents 
-** add 
-
-## UX 
+[UX](#ux)
+[User Stories](#user-stories)
+[Stucture](#structure)
+[Database Model](#database-model)
+[Design](#design)
+[Marketing](#marketing)
+[Features](#features)
+[Technology Used](#technologies-used)
+[Testing](#testing)
+[Bugs](#bugs)
+[Deployment](#deployment)
+[Finished Product](#finished-product)
+[Credits](#credits)
 
 
 ### Strategy 
@@ -189,7 +199,7 @@ Final Database Model:
 
 ### Checkout model 
 
-class Order(models.Model):
+``` class Order(models.Model):
     """
     A model for the customer order
     """
@@ -245,7 +255,8 @@ class Order(models.Model):
 
         
     def __str__(self):
-        return self.order_number
+        return self.order_number ```
+
 
 ### Line Item Model
 
@@ -431,7 +442,7 @@ During the design phase of building the site, various sneaker focuesed ecommerec
 
 Nunito was used as the primary font across the site. After research into ecommerce fonts, Nunito was chosen for its well-balanced appearance and rounded asaesthetic, which compliments the rounded border radius which features across the site. San-serif was chosen as a backup font, should Nunito fail. 
 
-## Marketing
+## Marketing
 
 ### Business Model
 
@@ -654,7 +665,7 @@ A custom 404 page is utilised. Users can click the 'return home' button to retur
 
 ## Testing 
 
-[testing](TESTING.md)
+[Testing](TESTING.md)
 
 
 ## Bugs
@@ -665,6 +676,8 @@ Then in the main urls.py I added:
 file path("robots.txt",TemplateView.as_view(template_name="./robots.txt", content_type="text/plain")), was added. This solved the bug and allowed the robots file to be crawled. 
 [robots error](document_assets/images/robotsbug.png)
 
+
+## Deployment
 
 When setting up the payment webhook, the payments failed. This was due to the wh secret key not connecting. Once connected correctly, the webhook succeeded. 
 [Failed Payment ](document_assets/images/payment_failed.png)
