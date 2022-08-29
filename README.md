@@ -193,7 +193,6 @@ Planned Database Model:
 ![Database](document_assets/images/sole_model.jpeg)
 
 Final Database Model:
-(insert database screenshots)
 
 ### Checkout model 
 
@@ -463,7 +462,6 @@ A variety of benefits are acquired with a Facebook marketing page including:
 * Driving traffic to the sole society website through Facebook links
 * Targeted advertising which can be adhered to specific demographics
 * Customer interaction through posted links generating communication between business and consumer
-The live Facebook Business page can be viewed (here)[https://www.facebook.com/profile.php?id=100084853331729]  
 
 ### Facebook 
 
@@ -491,7 +489,7 @@ The selected keywords are:
 
 ## Features 
 
-* The entire website has been designed with a responsive mobile first approach.
+The entire website has been designed with a responsive mobile first approach.
 
 The Header of the site features the site logo which links back to the homepage. The navigation links allow the shopper to navigate  and access differing sections across the website.
 ![header](document_assets/images/ss_header.png)
@@ -674,11 +672,11 @@ When validating pages through lighthouse, the robots txt file was shown as not v
 In order to solve this bug, a copy of the robots.txt file was copied into the templates folder.
 Then in the main urls.py I added: 
 file path("robots.txt",TemplateView.as_view(template_name="./robots.txt", content_type="text/plain")), was added. This solved the bug and allowed the robots file to be crawled. 
-[robots error](document_assets/images/robotsbug.png)
+![robots error](document_assets/images/robotsbug.png)
 
 
 When setting up the payment webhook, the payments failed. This was due to the wh secret key not connecting. Once connected correctly, the webhook succeeded. 
-[Failed Payment ](document_assets/images/payment_failed.png)
+![Failed Payment ](document_assets/images/payment_failed.png)
 
 ## Deployment
 
@@ -761,7 +759,8 @@ Heroku Deployment
 *   In settings.py set DEBUG = 'DEVELOPMENT' in os.environ
 
 
-### Amazon Web Service
+
+### Amazon Web Service
 
 AWS was used in order to store static and media files. 
 
