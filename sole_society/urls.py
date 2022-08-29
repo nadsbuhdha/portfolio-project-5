@@ -29,7 +29,8 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
-    path("robots.txt",TemplateView.as_view(template_name="./robots.txt", content_type="text/plain")),
+    path("robots.txt", TemplateView.as_view(template_name="./robots.txt",
+                                            content_type="text/plain")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = "home.views.error_handle_404"
