@@ -175,6 +175,7 @@ The project was developed in multiple phases in order to build a minimum viable 
 
 ### Phase 3 
 *  Reccomended products for registered user
+*  User Item Star Rating
 
 
 ## Structure 
