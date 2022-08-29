@@ -81,7 +81,8 @@ def add_to_favourites(request, product_id):
     except Http404:
         favourites = Favourites.objects.create(user=request.user)
     if product in favourites.product.all():
-        messages.info(request, 'Your Wishlist contains this product already,')
+        messages.info(request, 'Your favourites \
+             contains this product already,')
     else:
         favourites.product.add(product)
         messages.info(
@@ -93,11 +94,7 @@ def add_to_favourites(request, product_id):
 @login_required
 def remove_from_favourites(request, product_id):
     """
-    Removes a product from the users Wishlist.
-    Args:
-        request (the request object)
-        product_id (the product in question)
-    Returns:
+    Removes a product from the users favourites.
         A redirect to the previously viewed page
     """
     product = get_object_or_404(Product, pk=product_id)

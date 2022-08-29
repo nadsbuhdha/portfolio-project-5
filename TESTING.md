@@ -1,5 +1,6 @@
 The site has been thoroughly tested throughout
 
+## Manuel Testing 
 
 #### Navagation
 | Feature       | Test          | Outcome |
@@ -275,7 +276,7 @@ product page javascript validation
 ![product page javascript validation](document_assets/images/js_product_validation.png)
 
 
-### Lighthouse 
+### Lighthouse
 
 | Page        | Desktop  | Mobile   |
 | ------------- |:-------------:| -----:|

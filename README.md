@@ -139,7 +139,8 @@ In order to create a site which is relevant to its target audience, various othe
 | User Newsletter subscription   | 4 | 4 |
 | Create, Update, Delete products for superuser      | 5 | 5 |
 | Reccomended products for registered user      | 1 | 1 |
-
+| User Item Star Rating                         | 1 | 2 | 
+| Total                                         |83 |  86 |
 ### Scope
 
 The project was developed in multiple phases in order to build a minimum viable product. This product could then be developed and extended on. 
