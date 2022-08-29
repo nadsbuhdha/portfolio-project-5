@@ -31,19 +31,7 @@ The purpose of this website was to provide users with an ecommerce store where t
 
 #### Project Goals
 
-### User Stories 
-
-Throughout the project,  GitHub projects was utilised to track user stories in order to manage the project. When a user story was being focused on, it would be moved from the 'To Do' section to the 'In Progress' section. Once finished it would be moved to the 'Done' section. At the end of the project, any user stories which were not incorporated were moved to the 'Won't Have' section.
-
-
-Initial user story project board
-![start projectboard](document_assets/images/userstories_start.png)
-
-In Progress projectboard board
-![mid projectboard](document_assets/images/userstoriesmid.png)
-
-Finalised projectboard board
-![end projectboard](document_assets/images/userstories_finish.png)
+The main goals of this project were: to create an ecommerce store which simple an intuitive to navigate, responsive in design, customers are offered the ability to register, display appealing products to customers, ensure the site is aesthetically relevant to the products being sold and create an easy shopping experience for all customers. 
 
 ### Epic 1 - Site Foundations 
 
@@ -112,6 +100,20 @@ Finalised projectboard board
 * As a store owner I can edit a product so that I can edit product details
 
 * As a store owner I can I can delete a product so that I can remove the product from sales
+
+### User Stories 
+
+Throughout the project,  GitHub projects was utilised to track user stories in order to manage the project. When a user story was being focused on, it would be moved from the 'To Do' section to the 'In Progress' section. Once finished it would be moved to the 'Done' section. At the end of the project, any user stories which were not incorporated were moved to the 'Won't Have' section.
+
+
+Initial user story project board
+![start projectboard](document_assets/images/userstories_start.png)
+
+In Progress projectboard board
+![mid projectboard](document_assets/images/userstoriesmid.png)
+
+Finalised projectboard board
+![end projectboard](document_assets/images/userstories_finish.png)
 
 
 ### Strategy Table 
@@ -757,6 +759,7 @@ Heroku Deployment
 *   In the deploy tab in Heroku connect the app to Github by clicking Github and search for the     project’s repository. Once found, click  Enable Automatic Deploys to ensure project is automatically deployed to Heroku as well as github each time it’s pushed
 *   In settings.py and ensure the secret key is called from the enviroment using SECRET_KEY = os.environ.get('SECRET_KEY', '')
 *   In settings.py set DEBUG = 'DEVELOPMENT' in os.environ
+
 
 ### Amazon Web Service
 

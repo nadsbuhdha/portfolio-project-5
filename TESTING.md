@@ -291,4 +291,4 @@ product page javascript validation
 | Product management | ![Product management](document_assets/images/lighthouse_add_product.png) |![Product management](document_assets/images/lighthouse_addproducts_mob.png)|
 | Sign In | ![Sign In](document_assets/images/lighthouse_login_desktop.png) |![Sign In](document_assets/images/lighthouse_login_mob.png)|
 | Sign Out | ![Sign Out](document_assets/images/lighthouse_login_desktop.png) |![Sign Out](document_assets/images/lighthouse_logout_mob.png)|
-| Register | ![Register](document_assets/images/lighthouse_register_desktop.png) |![Register](document_assets/images/lighthouse_register_mob.png)|
+| Register | ![Register](document_assets/images/lighthouse_register_desktop.png) |![Register](document_assets/images/register_sign_in_mob_lighthouse.png)|
