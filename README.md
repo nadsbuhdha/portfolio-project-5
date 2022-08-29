@@ -174,11 +174,6 @@ The project was developed in multiple phases in order to build a minimum viable 
 ### Phase 3 
 *  Reccomended products for registered user
 
-## User Stories
-Throughout the project, Github project board was used as a management tool to track user stories. 
-This allowed the project to focus on particular specific tasks whilst being built. 
-
-**** ADD USER STORY IMAGES
 
 ## Structure 
 
@@ -424,7 +419,7 @@ Before building the site, Balsamiq was utilised to create wireframes of the site
 | Shopping Bag | ![desktop shopping bag](document_assets/images/desktop_shopping_bag.png) | ![mobile shopping bag](document_assets/images/mobile_shopping_bag.png) |
 | Checkout |![desktop checkout](document_assets/images/desktop_checkout.png) | ![mobile checkout](document_assets/images/mobile_checkout.png) |
 | Order Summary | ![desktop order summary](document_assets/images/desktop_ordersummary.png) | ![mobile order summary](document_assets/images/mobile_ordersummary.png) | 
-| Sign In | ![desktop sign in](ddocument_assets/images/desktop_sign_in.png) | ![mobile sign in](document_assets/images/mobile_sign_in.png) |
+| Sign In | ![desktop sign in](document_assets/images/desktop_sign_in.png) | ![mobile sign in](document_assets/images/mobile_sign_in.png) |
 | Sign Up | ![desktop sign up](document_assets/images/desktop_sign_up.png)  | ![mobile sign up](document_assets/images/mobile_sign_up.png)|
 |Sign Out | ![desktop sign out](document_assets/images/desktop_sign_out.png) | ![mobile sign out](document_assets/images/mobile_sign_out.png)|
 | User Profile | ![desktop user profile](document_assets/images/desktop_profile.png) | ![mobile user profile](document_assets/images/mobile_profile.png) |
@@ -450,7 +445,7 @@ Nunito was used as the primary font across the site. After research into ecommer
 ### Business Model
 
 ### Company description
-The Sole Society is a B2C retail company that sells branded footwear to consumers. The Society does not sell original products but products from external branded wholesale retailers or brand manufacturers.  
+The Sole Society is a B2C retail company that sells branded footwear to consumers. The business generates revenue by selling footwear to customers and consumers. The Society does not sell original products but products from external branded wholesale retailers or brand manufacturers.
 ### Target Audience 
 The core target market for the Sole Society is fashion-oriented individuals ranging in age from 12 – 40. 
 
@@ -680,11 +675,12 @@ file path("robots.txt",TemplateView.as_view(template_name="./robots.txt", conten
 [robots error](document_assets/images/robotsbug.png)
 
 
-## Deployment
-
 When setting up the payment webhook, the payments failed. This was due to the wh secret key not connecting. Once connected correctly, the webhook succeeded. 
 [Failed Payment ](document_assets/images/payment_failed.png)
 
+## Deployment
+
+Gitpod workspace was used to develop this project, utilising the code institute template. Using the terminal The project was committed and pushed to github.
 
 ### Forking The Repository
 
