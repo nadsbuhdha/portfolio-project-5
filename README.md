@@ -7,7 +7,7 @@ Sole Society is an ecommerce website focusing on sneakers.
 
 Sole Society provides users will the ability to purchase exclusive sneakers. Authenticated users can utilise the review and favourite features whilst store owners can access the CRUD functionality by adding editing publishing and deleting products to sell. 
 
-A live version of the site is available [here](https://sole-society.herokuapp.com/)
+A live version of the site is available [here](https://sole-society.onrender.com/)
 
 ## Table Of Contents 
 1. [UX](#ux)
