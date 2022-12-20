@@ -2,6 +2,9 @@
 
 ![solesociety](document_assets/images/amiresponsive.png)
 
+** UPDATE **
+
+** Due to Heroku's change in policy, this site is now hosted on onrender **
 
 Sole Society is an ecommerce website focusing on sneakers.
 
