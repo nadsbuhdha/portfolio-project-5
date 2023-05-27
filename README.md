@@ -4,7 +4,9 @@
 
 ** UPDATE **
 
-** Due to Heroku's change in policy, this site is now hosted on onrender **
+** Due to Heroku's change in policy, this site is now hosted on render - this hosting site takes a moment to load **
+
+** PLEASE ALLOW TIME FOR THE SITE TO LOAD **
 
 Sole Society is an ecommerce website focusing on sneakers.
 
